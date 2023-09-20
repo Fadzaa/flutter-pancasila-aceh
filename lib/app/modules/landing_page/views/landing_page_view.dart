@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:web_pancasila_aceh/app/modules/landing_page/components/LandingComponentOne.dart';
 
 import '../controllers/landing_page_controller.dart';
 
@@ -13,21 +14,9 @@ class LandingPageView extends GetView<LandingPageController> {
         title: const Text('LandingPageView'),
         centerTitle: true,
       ),
-      body: const Column(
+      body: Column(
         children: [
-          Center(
-            child: Text(
-              'LandingPageView is working',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-
-          Center(
-            child: Text(
-              'LandingPageView is working',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
+          landingComponentOne()
 
         ],
       ),
