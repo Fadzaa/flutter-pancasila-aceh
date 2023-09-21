@@ -14,6 +14,12 @@ class LandingPageView extends GetView<LandingPageController> {
       body: Column(
         children: [
           landingComponentOne(),
+          economicalCard(
+            professionName: 'professionName', 
+            professionDescription: 'Sektor pertanian di Aceh mencakup budidaya padi, kelapa sawit, kopi, karet, buah-buahan, dan sayuran, serta memiliki peran penting dalam mendukung ketahanan pangan dan perekonomian provinsi ini.',
+            professionImage: 'assets/images/perekonomian_perkebunan.png', 
+            context: context
+          )
         ],
       ),
     );

@@ -1,14 +1,15 @@
 import 'dart:js';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:web_pancasila_aceh/helper/themes.dart';
 
-Widget economicalCard({required professionName, required professionDescription, required context}){
+Widget economicalCard({required professionName, required professionDescription, required professionImage, required context}){
   return Container(
     width: MediaQuery.sizeOf(context).width * 0.4,
-    height: MediaQuery.sizeOf(context).height * 0.62,
+    height: MediaQuery.sizeOf(context).width * 0.33,
     decoration: BoxDecoration(
-      color: Colors.black,
+      color: Color.fromARGB(255, 255, 255, 255),
       borderRadius: BorderRadius.all(
         Radius.circular(28)
       ),
@@ -18,31 +19,49 @@ Widget economicalCard({required professionName, required professionDescription, 
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            
+            //Center Profession Image
             Center(
               child: Container(
                 width: MediaQuery.sizeOf(context).width * 0.4,
-                height: MediaQuery.sizeOf(context).height * 0.25,
+                height: MediaQuery.sizeOf(context).width * 0.18,
+                margin: EdgeInsets.only(top: 17, left: 16, right: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(28),
                   image: DecorationImage(
-                    image: AssetImage('assets/images/perekonomian_pariwisata.png'),
+                    image: AssetImage(professionImage),
                     fit: BoxFit.fill,
                   ),
                 ),
               ),
             ),
-            SizedBox(height: 31),
-            Text(
-              professionName,
-              style: tsCardHe,
-              textAlign: TextAlign.start,
+            SizedBox(height: 16),
+            //Container Profession Name
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 36),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    professionName,
+                    style: tsCardHe,
+                  ),
+                  SvgPicture.asset(
+                    'assets/icon/icon_cash.svg',
+                    width: 29,
+                  )
+                ],
+              )
             ),
-            SizedBox(height: 44),
-            Text(
-              professionDescription,
-              style: tsCardContent,
-            )
+            SizedBox(height: 26),
+            //Container Profession Description
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 36),
+              child: Text(
+                professionDescription,
+                style: tsCardContent,
+              ),
+            ),
+            SizedBox(height: 26)
           ],
         )
       ],

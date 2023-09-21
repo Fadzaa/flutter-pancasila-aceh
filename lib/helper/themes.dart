@@ -62,7 +62,7 @@ TextStyle tsCardHe = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor,
         fontWeight: FontWeight.w600,
-        fontSize: 33
+        fontSize: 32
     )
 );
 
@@ -85,3 +85,4 @@ String iconPassword = "assets/icon/icon-password.svg";
 String iconTrash = "assets/icon/icon-trash.svg";
 String iconArrow = "assets/icon/icon-arrow.svg";
 String iconLogout = "assets/icon/icon-logout.svg";
+String iconCash = "assets/icon/icon_cash.svg";
