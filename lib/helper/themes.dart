@@ -58,7 +58,21 @@ TextStyle tsHe = GoogleFonts.poppins(
     )
 );
 
+TextStyle tsCardHe = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 33
+    )
+);
 
+TextStyle tsCardContent = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w500,
+        fontSize: 16
+    )
+);
 
 //IMAGE ASSETS
 String bigLogo = "assets/logo/courdev-big.svg";
