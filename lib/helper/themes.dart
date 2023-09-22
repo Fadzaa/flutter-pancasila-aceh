@@ -14,7 +14,7 @@ TextStyle tsNavbarText = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor,
         fontWeight: FontWeight.w700,
-        fontSize: 14
+        fontSize: 10
     )
 );
 
@@ -22,7 +22,7 @@ TextStyle tsHeadingLandingPage = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor,
         fontWeight: FontWeight.w700,
-        fontSize: 60
+        fontSize: 56
     )
 );
 
@@ -30,7 +30,7 @@ TextStyle tsSubHeadingLandingPage = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor,
         fontWeight: FontWeight.w500,
-        fontSize: 28
+        fontSize: 24
     )
 );
 
@@ -38,7 +38,7 @@ TextStyle tsSubHeading = GoogleFonts.poppins(
     textStyle: const  TextStyle(
         color: primaryTextColor,
         fontWeight: FontWeight.w500,
-        fontSize: 28
+        fontSize: 24
     )
 );
 
@@ -46,7 +46,7 @@ TextStyle tsHeading = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor,
         fontWeight: FontWeight.w600,
-        fontSize: 44
+        fontSize: 40
     )
 );
 
@@ -54,7 +54,7 @@ TextStyle tsHe = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor,
         fontWeight: FontWeight.w600,
-        fontSize: 44
+        fontSize: 40
     )
 );
 
@@ -71,6 +71,14 @@ TextStyle tsCardContent = GoogleFonts.poppins(
         color: primaryTextColor,
         fontWeight: FontWeight.w500,
         fontSize: 16
+    )
+);
+
+TextStyle tsKulinerHeading = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w700,
+        fontSize: 40
     )
 );
 
