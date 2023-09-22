@@ -58,7 +58,21 @@ TextStyle tsHe = GoogleFonts.poppins(
     )
 );
 
+TextStyle tsCardHe = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 32
+    )
+);
 
+TextStyle tsCardContent = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w500,
+        fontSize: 16
+    )
+);
 
 //IMAGE ASSETS
 String bigLogo = "assets/logo/courdev-big.svg";
@@ -71,3 +85,4 @@ String iconPassword = "assets/icon/icon-password.svg";
 String iconTrash = "assets/icon/icon-trash.svg";
 String iconArrow = "assets/icon/icon-arrow.svg";
 String iconLogout = "assets/icon/icon-logout.svg";
+String iconCash = "assets/icon/icon_cash.svg";
