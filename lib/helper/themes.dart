@@ -50,11 +50,19 @@ TextStyle tsHeading = GoogleFonts.poppins(
     )
 );
 
-TextStyle tsHe = GoogleFonts.poppins(
-    textStyle: const TextStyle(
+TextStyle tsHe({bool isBold = false}) => GoogleFonts.poppins(
+    textStyle: TextStyle(
         color: primaryTextColor,
-        fontWeight: FontWeight.w600,
+        fontWeight: isBold ? FontWeight.w700 : FontWeight.w600,
         fontSize: 40
+    )
+);
+
+TextStyle tsHeading4({required FontWeight fontWeight}) => GoogleFonts.poppins(
+    textStyle: TextStyle(
+        color: primaryTextColor,
+        fontWeight: fontWeight,
+        fontSize: 20
     )
 );
 
