@@ -44,14 +44,5 @@ Widget staggeredGridImageKuliner({required String assetPath, required int crossA
         ),
       ],
     ),
-
-
-    // child: ClipRRect(
-    //   borderRadius: BorderRadius.circular(5),
-    //   child: Image.asset(
-    //     assetPath,
-    //     fit: BoxFit.cover,
-    //   ),
-    // ),
   );
 }
