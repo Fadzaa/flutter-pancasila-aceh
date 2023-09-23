@@ -82,6 +82,14 @@ TextStyle tsKulinerHeading = GoogleFonts.poppins(
     )
 );
 
+TextStyle tsCardHeading = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor,
+        fontWeight: FontWeight.w700,
+        fontSize: 20
+    )
+);
+
 //IMAGE ASSETS
 String bigLogo = "assets/logo/courdev-big.svg";
 String smallLogo = "assets/logo/courdev-small.svg";
