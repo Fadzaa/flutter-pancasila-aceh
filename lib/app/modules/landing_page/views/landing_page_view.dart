@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:web_pancasila_aceh/app/modules/landing_page/components/LandingComponentFour.dart';
-import 'package:web_pancasila_aceh/app/modules/landing_page/components/LandingComponentOne.dart';
-import 'package:web_pancasila_aceh/app/modules/landing_page/components/EconomicalCardWidget.dart';
+import 'package:web_pancasila_aceh/app/modules/landing_page/components/landing_component_four.dart';
+import 'package:web_pancasila_aceh/app/modules/landing_page/components/landing_component_one.dart';
+import 'package:web_pancasila_aceh/app/modules/landing_page/components/economical_card_widget.dart';
+import 'package:web_pancasila_aceh/app/modules/landing_page/components/landing_component_three.dart';
 
+import '../components/landing_component_five.dart';
+import '../components/landing_component_two.dart';
 import '../controllers/landing_page_controller.dart';
 
 class LandingPageView extends GetView<LandingPageController> {
@@ -12,11 +15,15 @@ class LandingPageView extends GetView<LandingPageController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          landingComponentOne(),
-          landingComponentFour(context: context)
-        ],
+      body: Container(
+        width: double.infinity,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+
+            ],
+          ),
+        ),
       ),
     );
   }

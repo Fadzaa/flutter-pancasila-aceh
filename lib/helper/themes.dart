@@ -82,15 +82,15 @@ TextStyle tsCardHeading = GoogleFonts.poppins(
     )
 );
 
+TextStyle tsFooter({required bool isHeading}) {
+    return GoogleFonts.poppins(
+        textStyle: TextStyle(
+            color: whiteTextColor,
+            fontWeight: isHeading ? FontWeight.w500 : FontWeight.normal,
+            fontSize: isHeading? 18 : 16
+        )
+    );
+}
+
 //IMAGE ASSETS
-String bigLogo = "assets/logo/courdev-big.svg";
-String smallLogo = "assets/logo/courdev-small.svg";
-String googleIcon = "assets/logo/google-icons.svg";
-String topDecoration = "assets/top-decoration.svg";
-String iconName = "assets/icon/icon-name.svg";
-String iconEmail = "assets/icon/icon-email.svg";
-String iconPassword = "assets/icon/icon-password.svg";
-String iconTrash = "assets/icon/icon-trash.svg";
-String iconArrow = "assets/icon/icon-arrow.svg";
-String iconLogout = "assets/icon/icon-logout.svg";
 String iconCash = "assets/icon/icon_cash.svg";
