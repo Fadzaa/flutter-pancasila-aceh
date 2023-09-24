@@ -98,6 +98,30 @@ TextStyle tsCardHeading = GoogleFonts.poppins(
     )
 );
 
+TextStyle tsTitleFooter = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 32
+    )
+);
+
+TextStyle tsHeadingFooter = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 44
+    )
+);
+
+TextStyle tsSubHeadingFooter = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 20
+    )
+);
+
 //IMAGE ASSETS
 String bigLogo = "assets/logo/courdev-big.svg";
 String smallLogo = "assets/logo/courdev-small.svg";
