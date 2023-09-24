@@ -14,7 +14,7 @@ TextStyle tsNavbarText = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor,
         fontWeight: FontWeight.w700,
-        fontSize: 14
+        fontSize: 10
     )
 );
 
@@ -22,7 +22,7 @@ TextStyle tsHeadingLandingPage = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor,
         fontWeight: FontWeight.w700,
-        fontSize: 60
+        fontSize: 56
     )
 );
 
@@ -30,7 +30,7 @@ TextStyle tsSubHeadingLandingPage = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor,
         fontWeight: FontWeight.w500,
-        fontSize: 28
+        fontSize: 24
     )
 );
 
@@ -38,7 +38,7 @@ TextStyle tsSubHeading = GoogleFonts.poppins(
     textStyle: const  TextStyle(
         color: primaryTextColor,
         fontWeight: FontWeight.w500,
-        fontSize: 28
+        fontSize: 24
     )
 );
 
@@ -46,19 +46,81 @@ TextStyle tsHeading = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor,
         fontWeight: FontWeight.w600,
-        fontSize: 44
+        fontSize: 40
     )
 );
 
-TextStyle tsHe = GoogleFonts.poppins(
+TextStyle tsHe({bool isBold = false}) => GoogleFonts.poppins(
+    textStyle: TextStyle(
+        color: primaryTextColor,
+        fontWeight: isBold ? FontWeight.w700 : FontWeight.w600,
+        fontSize: 40
+    )
+);
+
+TextStyle tsHeading4({required FontWeight fontWeight}) => GoogleFonts.poppins(
+    textStyle: TextStyle(
+        color: primaryTextColor,
+        fontWeight: fontWeight,
+        fontSize: 20
+    )
+);
+
+TextStyle tsCardHe = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 32
+    )
+);
+
+TextStyle tsCardContent = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w500,
+        fontSize: 16
+    )
+);
+
+TextStyle tsKulinerHeading = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w700,
+        fontSize: 40
+    )
+);
+
+TextStyle tsCardHeading = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor,
+        fontWeight: FontWeight.w700,
+        fontSize: 20
+    )
+);
+
+TextStyle tsTitleFooter = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 32
+    )
+);
+
+TextStyle tsHeadingFooter = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor,
         fontWeight: FontWeight.w600,
         fontSize: 44
     )
 );
 
-
+TextStyle tsSubHeadingFooter = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 20
+    )
+);
 
 //IMAGE ASSETS
 String bigLogo = "assets/logo/courdev-big.svg";
@@ -71,3 +133,4 @@ String iconPassword = "assets/icon/icon-password.svg";
 String iconTrash = "assets/icon/icon-trash.svg";
 String iconArrow = "assets/icon/icon-arrow.svg";
 String iconLogout = "assets/icon/icon-logout.svg";
+String iconCash = "assets/icon/icon_cash.svg";

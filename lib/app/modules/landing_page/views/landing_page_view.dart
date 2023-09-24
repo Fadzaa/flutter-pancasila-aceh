@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:web_pancasila_aceh/app/modules/landing_page/components/LandingComponentFour.dart';
 import 'package:web_pancasila_aceh/app/modules/landing_page/components/LandingComponentOne.dart';
 import 'package:web_pancasila_aceh/app/modules/landing_page/components/EconomicalCardWidget.dart';
 
@@ -14,7 +15,7 @@ class LandingPageView extends GetView<LandingPageController> {
       body: Column(
         children: [
           landingComponentOne(),
-          economicalCard(professionName: 'professionName', professionDescription: 'asas')
+          landingComponentFour(context: context)
         ],
       ),
     );
