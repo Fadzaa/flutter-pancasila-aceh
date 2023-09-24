@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:web_pancasila_aceh/helper/themes.dart';
 
-Widget staggeredGridImageKuliner({required String assetPath, required int crossAxisCellCount, required String textValue}) {
+Widget staggeredGridTileImageKuliner({required String assetPath, required int crossAxisCellCount, required String textValue}) {
   return StaggeredGridTile.count(
     crossAxisCellCount: crossAxisCellCount,
     mainAxisCellCount: 1,
