@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:web_pancasila_aceh/app/modules/landing_page/components/footer.dart';
 import 'package:web_pancasila_aceh/app/modules/landing_page/widgets/text_footer_dalam_angka.dart';
 import 'package:web_pancasila_aceh/helper/themes.dart';
 
@@ -63,6 +64,8 @@ Widget landingComponentFive({required BuildContext context}) {
           width: double.infinity,
           margin: const EdgeInsets.only(bottom: 10),
         ),
+
+        const Footer()
 
 
       ]

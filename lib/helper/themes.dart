@@ -50,14 +50,6 @@ TextStyle tsHeading = GoogleFonts.poppins(
     )
 );
 
-TextStyle tsHe({bool isBold = false}) => GoogleFonts.poppins(
-    textStyle: TextStyle(
-        color: primaryTextColor,
-        fontWeight: isBold ? FontWeight.w700 : FontWeight.w600,
-        fontSize: 40
-    )
-);
-
 TextStyle tsHeading4({required FontWeight fontWeight}) => GoogleFonts.poppins(
     textStyle: TextStyle(
         color: primaryTextColor,
@@ -82,55 +74,23 @@ TextStyle tsCardContent = GoogleFonts.poppins(
     )
 );
 
-TextStyle tsKulinerHeading = GoogleFonts.poppins(
-    textStyle: const TextStyle(
-        color: primaryTextColor,
-        fontWeight: FontWeight.w700,
-        fontSize: 40
-    )
-);
-
 TextStyle tsCardHeading = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor,
-        fontWeight: FontWeight.w700,
-        fontSize: 20
-    )
-);
-
-TextStyle tsTitleFooter = GoogleFonts.poppins(
-    textStyle: const TextStyle(
-        color: whiteTextColor,
-        fontWeight: FontWeight.w600,
-        fontSize: 32
-    )
-);
-
-TextStyle tsHeadingFooter = GoogleFonts.poppins(
-    textStyle: const TextStyle(
-        color: whiteTextColor,
-        fontWeight: FontWeight.w600,
-        fontSize: 44
-    )
-);
-
-TextStyle tsSubHeadingFooter = GoogleFonts.poppins(
-    textStyle: const TextStyle(
-        color: whiteTextColor,
         fontWeight: FontWeight.w600,
         fontSize: 20
     )
 );
+
+TextStyle tsFooter({required bool isHeading}) {
+    return GoogleFonts.poppins(
+        textStyle: TextStyle(
+            color: whiteTextColor,
+            fontWeight: isHeading ? FontWeight.w500 : FontWeight.normal,
+            fontSize: isHeading? 18 : 16
+        )
+    );
+}
 
 //IMAGE ASSETS
-String bigLogo = "assets/logo/courdev-big.svg";
-String smallLogo = "assets/logo/courdev-small.svg";
-String googleIcon = "assets/logo/google-icons.svg";
-String topDecoration = "assets/top-decoration.svg";
-String iconName = "assets/icon/icon-name.svg";
-String iconEmail = "assets/icon/icon-email.svg";
-String iconPassword = "assets/icon/icon-password.svg";
-String iconTrash = "assets/icon/icon-trash.svg";
-String iconArrow = "assets/icon/icon-arrow.svg";
-String iconLogout = "assets/icon/icon-logout.svg";
 String iconCash = "assets/icon/icon_cash.svg";

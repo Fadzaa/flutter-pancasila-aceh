@@ -19,7 +19,7 @@ Widget landingComponentFour({required context}) {
                 ),
                 Text(
                   'Galeri Pemimpin Aceh',
-                  style: tsHe(isBold: true),
+                  style: tsHeading,
                   textAlign: TextAlign.left,
                 ),
                 Row(
