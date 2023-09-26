@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_pancasila_aceh/helper/themes.dart';
-
+import 'package:web_pancasila_aceh/common/helper/themes.dart';
 Widget landingComponentFour({required context}) {
   return Container(
     margin: EdgeInsets.only(left: 88, top: 34, right: 88),

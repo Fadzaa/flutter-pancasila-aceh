@@ -2,7 +2,8 @@ import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:web_pancasila_aceh/helper/themes.dart';
+import 'package:web_pancasila_aceh/common/helper/themes.dart';
+
 
 Widget economicalCard({required professionName, required professionDescription, required professionImage, required context}){
   return Container(

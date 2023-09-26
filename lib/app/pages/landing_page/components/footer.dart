@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_pancasila_aceh/helper/themes.dart';
-
+import 'package:web_pancasila_aceh/common/helper/themes.dart';
 class Footer extends StatelessWidget {
   const Footer({Key? key}) : super(key: key);
 
