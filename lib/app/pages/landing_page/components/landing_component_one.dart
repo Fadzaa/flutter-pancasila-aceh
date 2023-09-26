@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:web_pancasila_aceh/app/modules/landing_page/components/top_navigation_bar.dart';
-import 'package:web_pancasila_aceh/helper/themes.dart';
-
+import 'package:web_pancasila_aceh/app/pages/landing_page/components/top_navigation_bar.dart';
+import 'package:web_pancasila_aceh/common/helper/themes.dart';
 Widget landingComponentOne({required BuildContext context}) {
   final Size mediaQuery = MediaQuery.of(context).size;
   final double width = mediaQuery.width;

@@ -1,9 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:web_pancasila_aceh/app/modules/landing_page/components/footer.dart';
-import 'package:web_pancasila_aceh/app/modules/landing_page/widgets/text_footer_dalam_angka.dart';
-import 'package:web_pancasila_aceh/helper/themes.dart';
+import 'package:web_pancasila_aceh/app/pages/landing_page/widgets/text_footer_dalam_angka.dart';
+import 'package:web_pancasila_aceh/common/helper/themes.dart';
 
+import 'footer.dart';
 Widget landingComponentFive({required BuildContext context}) {
   return Container(
     width: MediaQuery.of(context).size.width,

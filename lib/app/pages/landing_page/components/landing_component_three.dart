@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:web_pancasila_aceh/app/modules/landing_page/widgets/staggered_grid_tile_image_kuliner.dart';
-import 'package:web_pancasila_aceh/helper/themes.dart';
-
+import 'package:web_pancasila_aceh/app/pages/landing_page/widgets/staggered_grid_tile_image_kuliner.dart';
+import 'package:web_pancasila_aceh/common/helper/themes.dart';
 Widget landingComponentThree({required BuildContext context}) {
   double widthMediaQuery = MediaQuery.of(context).size.width;
 
