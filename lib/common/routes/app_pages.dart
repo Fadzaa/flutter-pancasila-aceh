@@ -9,34 +9,35 @@ import 'package:web_pancasila_aceh/app/pages/recognize_page/recognize_page_bindi
 import 'package:web_pancasila_aceh/app/pages/recognize_page/recognize_page_view.dart';
 
 
-
 part 'app_routes.dart';
 
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.LANDING_PAGE;
+  static const INITIAL = Routes.HISTORY_PAGE;
 
   static final routes = [
     GetPage(
       name: _Paths.LANDING_PAGE,
+      page: () => LandingPageView(),
+      binding: LandingPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.HISTORY_PAGE,
       page: () => HistoryPageView(),
       binding: HistoryPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.ECONOMIC_PAGE,
+      page: () => EconomicPageView(),
+      binding: EconomicPageBinding(),
     ),
     GetPage(
       name: _Paths.RECOGNIZE_PAGE,
       page: () => RecognizePageView(),
       binding: RecognizePageBinding(),
     ),
-    GetPage(
-      name: _Paths.RECOGNIZE_PAGE,
-      page: () => RecognizePageView(),
-      binding: RecognizePageBinding(),
-    ),
-    GetPage(
-      name: _Paths.LANDING_PAGE,
-      page: () => HistoryPageView(),
-      binding: HistoryPageBinding(),
-    ),
+    
+    
   ];
 }
