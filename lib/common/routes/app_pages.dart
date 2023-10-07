@@ -24,12 +24,12 @@ class AppPages {
       binding: LandingPageBinding(),
     ),
     GetPage(
-      name: _Paths.HISTORY_PAGE,
+      name: _Paths.LANDING_PAGE,
       page: () => HistoryPageView(),
       binding: HistoryPageBinding(),
     ),
     GetPage(
-      name: _Paths.ECONOMIC_PAGE,
+      name: _Paths.HISTORY_PAGE,
       page: () => EconomicPageView(),
       binding: EconomicPageBinding(),
     ),
