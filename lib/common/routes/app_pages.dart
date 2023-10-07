@@ -15,11 +15,11 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HISTORY_PAGE;
+  static const INITIAL = Routes.LANDING_PAGE;
 
   static final routes = [
     GetPage(
-      name: _Paths.HISTORY_PAGE,
+      name: _Paths.LANDING_PAGE,
       page: () => LandingPageView(),
       binding: LandingPageBinding(),
     ),
