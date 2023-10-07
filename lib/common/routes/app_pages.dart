@@ -20,23 +20,23 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.LANDING_PAGE,
-      page: () => LandingPageView(),
-      binding: LandingPageBinding(),
-    ),
-    GetPage(
-      name: _Paths.LANDING_PAGE,
       page: () => HistoryPageView(),
       binding: HistoryPageBinding(),
-    ),
-    GetPage(
-      name: _Paths.HISTORY_PAGE,
-      page: () => EconomicPageView(),
-      binding: EconomicPageBinding(),
     ),
     GetPage(
       name: _Paths.RECOGNIZE_PAGE,
       page: () => RecognizePageView(),
       binding: RecognizePageBinding(),
+    ),
+    GetPage(
+      name: _Paths.RECOGNIZE_PAGE,
+      page: () => RecognizePageView(),
+      binding: RecognizePageBinding(),
+    ),
+    GetPage(
+      name: _Paths.LANDING_PAGE,
+      page: () => HistoryPageView(),
+      binding: HistoryPageBinding(),
     ),
   ];
 }
