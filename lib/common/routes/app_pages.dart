@@ -19,7 +19,7 @@ class AppPages {
 
   static final routes = [
     GetPage(
-      name: _Paths.LANDING_PAGE,
+      name: _Paths.HISTORY_PAGE,
       page: () => LandingPageView(),
       binding: LandingPageBinding(),
     ),
