@@ -13,8 +13,8 @@ const Color whiteTextColor = Color(0xFFF9FFFF);
 TextStyle tsNavbarText = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor,
-        fontWeight: FontWeight.w700,
-        fontSize: 10
+        fontWeight: FontWeight.w600,
+        fontSize: 14
     )
 );
 
@@ -98,7 +98,7 @@ TextStyle tsHeading5MediumBlack = GoogleFonts.poppins(
     )
 );
 
-TextStyle tsFooter({required bool isHeading}) {
+TextStyle tsFooter({bool isHeading = false}) {
     return GoogleFonts.poppins(
         textStyle: TextStyle(
             color: whiteTextColor,
