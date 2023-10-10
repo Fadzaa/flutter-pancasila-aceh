@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_pancasila_aceh/app/global_component/index.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 
 class LandingPageView extends ResponsiveScreenState {
@@ -15,10 +16,10 @@ class LandingPageView extends ResponsiveScreenState {
       backgroundColor: Colors.yellow,
       body: Container(
         width: double.infinity,
-        child: SingleChildScrollView(
+        child: const SingleChildScrollView(
           child: Column(
             children: [
-              Text("This is Desktop Page")
+              Footer()
             ],
           ),
         ),
@@ -36,7 +37,8 @@ class LandingPageView extends ResponsiveScreenState {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text("This is Mobile Page")
+              Text("This is Mobile Page"),
+            
             ],
           ),
         ),
