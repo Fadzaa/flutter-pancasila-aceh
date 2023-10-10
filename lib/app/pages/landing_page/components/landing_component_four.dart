@@ -13,12 +13,12 @@ Widget landingComponentFour({required context}) {
               children: [
                 Text(
                 'Pengen liat pemerintahnya?',
-                style: tsSubHeading,
+                style: tsHeading3MediumBlack,
                 textAlign: TextAlign.left,
                 ),
                 Text(
                   'Galeri Pemimpin Aceh',
-                  style: tsHeading,
+                  style: tsHeading1BoldBlack,
                   textAlign: TextAlign.left,
                 ),
                 Row(
@@ -31,18 +31,18 @@ Widget landingComponentFour({required context}) {
                         SizedBox(height: 85),
                         Text(
                           'Mayor Jenderal TNI (Purn.) Achmad Marzuki',
-                          style: tsHeading4(fontWeight: FontWeight.w700),
+                          style: tsHeading4BoldBlack,
                         ),
                         SizedBox(height: 49),
                         Text(
                           'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-                          style: tsCardContent,
+                          style: tsHeading4MediumBlack,
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 49),
                           Text(
                             '2022 - 2023',
-                            style: tsHeading4(fontWeight: FontWeight.w700),
+                            style: tsHeading4BoldBlack,
                           )
                         ],
                       ),

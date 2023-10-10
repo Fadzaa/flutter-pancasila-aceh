@@ -37,7 +37,11 @@ Widget staggeredGridTileImageKuliner({required String assetPath, required int cr
             padding: EdgeInsets.all(20),
             child: Text(
               textValue,
-              style: tsCardHeading,
+              style: const TextStyle(
+                  color: whiteTextColor,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 20
+              ),
             ),
           ),
         ),
