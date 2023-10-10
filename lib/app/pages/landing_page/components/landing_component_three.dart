@@ -15,8 +15,8 @@ Widget landingComponentThree({required BuildContext context}) {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text("Mau makan makanan Aceh?", style: tsSubHeading),
-        Text("Galeri Kuliner Khas", style: tsHeading),
+        Text("Mau makan makanan Aceh?", style: tsHeading3MediumBlack),
+        Text("Galeri Kuliner Khas", style: tsHeading1BoldBlack),
         SizedBox(height: 30),
         StaggeredGrid.count(
           crossAxisCount: 6,

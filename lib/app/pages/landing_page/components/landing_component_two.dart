@@ -34,9 +34,9 @@ class LandingComponentTwo extends StatelessWidget {
         children: [
           Column(
             children: [
-              Text("Apa yang menarik dari Aceh?", style: tsSubHeading,),
+              Text("Apa yang menarik dari Aceh?", style: tsHeading3MediumBlack,),
 
-              Text("Destinasi Wisata Favorit?", style: tsHeading,),
+              Text("Destinasi Wisata Favorit?", style: tsHeading1BoldBlack,),
             ],
           ),
           Row(

@@ -36,8 +36,8 @@ Widget landingComponentOne({required BuildContext context}) {
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Pancacita, Lima Cita - Cita", style: tsSubHeadingLandingPage),
-            Text("Provinsi Aceh".toUpperCase(), style: tsHeadingLandingPage),
+            Text("Pancacita, Lima Cita - Cita", style: tsHeading3MediumWhite),
+            Text("Provinsi Aceh".toUpperCase(), style: tsDisplayBoldWhite),
 
           ],
         ),
