@@ -44,7 +44,7 @@ Widget economicalCard({required professionName, required professionDescription, 
                 children: [
                   Text(
                     professionName,
-                    style: tsCardHe,
+                    style: tsHeading2SemiBoldBlack,
                   ),
                   SvgPicture.asset(
                     'assets/icon/icon_cash.svg',
@@ -59,7 +59,7 @@ Widget economicalCard({required professionName, required professionDescription, 
               margin: EdgeInsets.symmetric(horizontal: 36),
               child: Text(
                 professionDescription,
-                style: tsCardContent,
+                style: tsHeading4MediumBlack,
               ),
             ),
             SizedBox(height: 26)

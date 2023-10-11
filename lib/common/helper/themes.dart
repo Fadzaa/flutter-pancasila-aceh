@@ -13,12 +13,12 @@ const Color whiteTextColor = Color(0xFFF9FFFF);
 TextStyle tsNavbarText = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor,
-        fontWeight: FontWeight.w700,
-        fontSize: 10
+        fontWeight: FontWeight.w600,
+        fontSize: 14
     )
 );
 
-TextStyle tsHeadingLandingPage = GoogleFonts.poppins(
+TextStyle tsDisplayBoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor,
         fontWeight: FontWeight.w700,
@@ -26,39 +26,15 @@ TextStyle tsHeadingLandingPage = GoogleFonts.poppins(
     )
 );
 
-TextStyle tsSubHeadingLandingPage = GoogleFonts.poppins(
-    textStyle: const TextStyle(
-        color: whiteTextColor,
-        fontWeight: FontWeight.w500,
-        fontSize: 24
-    )
-);
-
-TextStyle tsSubHeading = GoogleFonts.poppins(
-    textStyle: const  TextStyle(
-        color: primaryTextColor,
-        fontWeight: FontWeight.w500,
-        fontSize: 24
-    )
-);
-
-TextStyle tsHeading = GoogleFonts.poppins(
+TextStyle tsHeading1BoldBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.w700,
         fontSize: 40
     )
 );
 
-TextStyle tsHeading4({required FontWeight fontWeight}) => GoogleFonts.poppins(
-    textStyle: TextStyle(
-        color: primaryTextColor,
-        fontWeight: fontWeight,
-        fontSize: 20
-    )
-);
-
-TextStyle tsCardHe = GoogleFonts.poppins(
+TextStyle tsHeading2SemiBoldBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor,
         fontWeight: FontWeight.w600,
@@ -66,7 +42,55 @@ TextStyle tsCardHe = GoogleFonts.poppins(
     )
 );
 
-TextStyle tsCardContent = GoogleFonts.poppins(
+TextStyle tsHeading2SemiBoldWhite = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 32
+    )
+);
+
+TextStyle tsHeading3BoldBlack = GoogleFonts.poppins(
+    textStyle: const  TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w700,
+        fontSize: 24
+    )
+);
+
+TextStyle tsHeading3MediumBlack = GoogleFonts.poppins(
+    textStyle: const  TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w500,
+        fontSize: 24
+    )
+);
+
+TextStyle tsHeading3MediumWhite = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor,
+        fontWeight: FontWeight.w500,
+        fontSize: 24
+    )
+);
+
+TextStyle tsHeading4BoldBlack = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w700,
+        fontSize: 20
+    )
+);
+
+TextStyle tsHeading4MediumBlack = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor,
+        fontWeight: FontWeight.w500,
+        fontSize: 20
+    )
+);
+
+TextStyle tsHeading5MediumBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor,
         fontWeight: FontWeight.w500,
@@ -74,15 +98,7 @@ TextStyle tsCardContent = GoogleFonts.poppins(
     )
 );
 
-TextStyle tsCardHeading = GoogleFonts.poppins(
-    textStyle: const TextStyle(
-        color: whiteTextColor,
-        fontWeight: FontWeight.w600,
-        fontSize: 20
-    )
-);
-
-TextStyle tsFooter({required bool isHeading}) {
+TextStyle tsFooter({bool isHeading = false}) {
     return GoogleFonts.poppins(
         textStyle: TextStyle(
             color: whiteTextColor,
