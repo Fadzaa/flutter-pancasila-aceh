@@ -32,7 +32,8 @@ class HeroComponent extends StatelessWidget {
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(imagePath),
-                    fit: BoxFit.fitWidth
+                    fit: width < 1175 ? BoxFit.fitHeight : BoxFit.fitWidth,
+
                 )
             ),
           ),
