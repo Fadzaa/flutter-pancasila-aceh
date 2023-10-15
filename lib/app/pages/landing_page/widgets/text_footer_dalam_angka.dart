@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
+
 Widget textFooterDalamAngka ({required String textSubHeading, required String textHeading, required BuildContext context}) {
   return Container(
     width: MediaQuery.of(context).size.width * 0.33333333,

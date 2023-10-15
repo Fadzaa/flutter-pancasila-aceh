@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_pancasila_aceh/app/global_component/index.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 
 
@@ -19,7 +20,12 @@ class RecognizePageView extends ResponsiveScreenState {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text("This is Desktop Page")
+              HeroComponent(
+                  imagePath: "assets/bg_hero_recognize.png",
+                  headingText: "Kenali Provinsi Aceh",
+                  subHeadingText: "Jelajahi Aceh Lebih Dalam"
+              ),
+
             ],
           ),
         ),
