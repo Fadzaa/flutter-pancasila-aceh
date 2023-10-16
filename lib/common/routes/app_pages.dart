@@ -15,7 +15,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HISTORY_PAGE;
+  static const INITIAL = Routes.RECOGNIZE_PAGE;
 
   static final routes = [
     GetPage(
