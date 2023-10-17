@@ -18,7 +18,7 @@ class RecognizePageView extends ResponsiveScreenState {
       backgroundColor: Colors.white,
       body: Container(
         width: double.infinity,
-        child: SingleChildScrollView(
+        child: const SingleChildScrollView(
           child: Column(
             children: [
               HeroComponent(
@@ -26,9 +26,12 @@ class RecognizePageView extends ResponsiveScreenState {
                   headingText: "Kenali Provinsi Aceh",
                   subHeadingText: "Jelajahi Aceh Lebih Dalam"
               ),
-              RecognizeComponentOne(),
-              RecognizeComponentTwo(),
-              RecognizeComponentThree()
+              // RecognizeComponentOne(),
+              // RecognizeComponentTwo(),
+              // RecognizeComponentThree(),
+              RecognizeComponentFour(),
+
+              // Footer()
             ],
           ),
         ),
@@ -43,7 +46,7 @@ class RecognizePageView extends ResponsiveScreenState {
       backgroundColor: Colors.grey,
       body: Container(
         width: double.infinity,
-        child: SingleChildScrollView(
+        child: const SingleChildScrollView(
           child: Column(
             children: [
               Text("This is Mobile Page")
