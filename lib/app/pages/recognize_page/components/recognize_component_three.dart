@@ -19,7 +19,7 @@ class RecognizeComponentThree extends StatelessWidget {
           Text("Wisata Provinsi Aceh", style: tsHeading1BoldBlack,),
 
           //Grid Card
-          Stack(
+          Column(
             children: [
               Container(
                 width: 413,
@@ -36,6 +36,7 @@ class RecognizeComponentThree extends StatelessWidget {
               Container(
                 width: 508,
                 height: 516,
+                color: Colors.white,
                 padding: EdgeInsets.fromLTRB(36, 132, 36, 37),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -82,11 +83,12 @@ class RecognizeComponentThree extends StatelessWidget {
 
 
           //Big Container Card
-          Stack(
+          Column(
             children: [
               Container(
                 width: 702,
                 height: 315,
+
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     image: DecorationImage(
@@ -99,6 +101,7 @@ class RecognizeComponentThree extends StatelessWidget {
               Container(
                 width: 877,
                 height: 531,
+                color: Colors.white,
                 padding: EdgeInsets.fromLTRB(54, 207, 54, 37),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
