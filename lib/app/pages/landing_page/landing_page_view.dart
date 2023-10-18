@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_pancasila_aceh/app/global_component/index.dart';
+import 'package:web_pancasila_aceh/app/pages/landing_page/components/index.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 
 class LandingPageView extends ResponsiveScreenState {
@@ -19,6 +20,7 @@ class LandingPageView extends ResponsiveScreenState {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              
               Footer()
             ],
           ),
