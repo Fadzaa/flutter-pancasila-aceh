@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 import 'package:web_pancasila_aceh/common/routes/app_pages.dart';
 
 import 'navigation_text.dart';
 
-class TopNavigationBar extends StatelessWidget {
-  const TopNavigationBar({Key? key}) : super(key: key);
+class TopNavigationBar extends ResponsiveScreenState {
+  TopNavigationBar({Key? key});
   @override
   Widget build(BuildContext context) {
     final Size mediaQuery = MediaQuery.of(context).size;
@@ -53,5 +54,17 @@ class TopNavigationBar extends StatelessWidget {
         ],
       ),
     );
+  }
+  
+  @override
+  Widget buildDesktopPage(BuildContext context) {
+    // TODO: implement buildDesktopPage
+    throw UnimplementedError();
+  }
+  
+  @override
+  Widget buildMobilePage(BuildContext context) {
+    // TODO: implement buildMobilePage
+    throw UnimplementedError();
   }
 }
