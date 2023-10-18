@@ -13,7 +13,7 @@ class HistoryPageView extends ResponsiveScreenState {
   }
 
   @override
-  Widget buildDesktopPage() {
+  Widget buildDesktopPage(context) {
     // TODO: implement buildDesktopPage
     return Scaffold(
       backgroundColor: Colors.white,
@@ -33,7 +33,7 @@ class HistoryPageView extends ResponsiveScreenState {
   }
 
   @override
-  Widget buildMobilePage() {
+  Widget buildMobilePage(context) {
     // TODO: implement buildMobilePage
     return Scaffold(
       backgroundColor: Colors.grey,

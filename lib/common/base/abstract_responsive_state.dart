@@ -8,15 +8,15 @@ abstract class ResponsiveScreenState<T extends GetxController> extends GetView {
     return Builder(
         builder: (BuildContext context) {
           if (MediaQuery.of(context).size.width > AppConstants.MOBILE_PAGE_SIZE_THRESHOLD) {
-            return buildDesktopPage();
+            return buildDesktopPage(context);
           } else {
-            return buildMobilePage();
+            return buildMobilePage(context);
           }
         }
     );
   }
 
-  Widget buildDesktopPage();
+  Widget buildDesktopPage(BuildContext context);
 
-  Widget buildMobilePage();
+  Widget buildMobilePage(BuildContext context);
 }
