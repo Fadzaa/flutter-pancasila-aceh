@@ -77,7 +77,7 @@ class TopNavigationBar extends ResponsiveScreenState {
     return Container(
       margin: EdgeInsets.fromLTRB(18, 30, 18, 0),
       padding: EdgeInsets.only(left: 5, right: 25),
-      height: height * 0.085,
+      height: height * 0.07,
       decoration: BoxDecoration(
           color: primaryColor, borderRadius: BorderRadius.circular(72)),
       child: Row(
