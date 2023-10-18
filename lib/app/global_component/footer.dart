@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:web_pancasila_aceh/app/global_component/navigation_text.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 import 'package:web_pancasila_aceh/common/routes/app_pages.dart';
@@ -19,7 +18,6 @@ class Footer extends ResponsiveScreenState {
     // TODO: implement buildDesktopPage
     final Size mediaQuery = MediaQuery.of(context).size;
     final double width = mediaQuery.width;
-    final double height = mediaQuery.height;
     return Container(
       padding: EdgeInsets.fromLTRB(88, 35, 88, 35),
       width: width,
@@ -70,10 +68,9 @@ class Footer extends ResponsiveScreenState {
 
   @override
   Widget buildMobilePage(BuildContext context) {
-    // TODO: implement buildMobilePage
+
     final Size mediaQuery = MediaQuery.of(context).size;
     final double width = mediaQuery.width;
-    final double height = mediaQuery.height;
     return Container(
       padding: EdgeInsets.all(35),
       width: width,
