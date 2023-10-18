@@ -50,6 +50,7 @@ class RecognizePageView extends ResponsiveScreenState {
                   imagePath: "assets/images/bg_hero_recognize.png",
                   headingText: "Kenali Provinsi Aceh",
                   subHeadingText: "Jelajahi Aceh Lebih Dalam"),
+              Footer()
             ],
           ),
         ),
