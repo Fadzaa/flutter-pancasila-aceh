@@ -16,7 +16,7 @@ class LandingPageView extends ResponsiveScreenState {
       backgroundColor: Colors.yellow,
       body: Container(
         width: double.infinity,
-        child: const SingleChildScrollView(
+        child: SingleChildScrollView(
           child: Column(
             children: [
               Footer()
