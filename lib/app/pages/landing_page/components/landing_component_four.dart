@@ -103,7 +103,8 @@ class LandingComponentFour extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
-              )
+              ),
+
             ],
           )
         ],
