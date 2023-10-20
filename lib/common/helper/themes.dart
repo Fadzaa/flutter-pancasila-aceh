@@ -79,67 +79,67 @@ TextStyle tsFooter({bool isHeading = false}) {
 
 TextStyle tsHeading2BoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 36));
+        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 34));
 
 TextStyle tsHeading3BoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 28));
+        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 26));
 
 TextStyle tsHeading4BoldGrey = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: greyTextColor, fontWeight: FontWeight.w700, fontSize: 24));
+        color: greyTextColor, fontWeight: FontWeight.w700, fontSize: 22));
 
 TextStyle tsParagraph18BoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 14));
+        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 12));
 
 TextStyle tsParagraph16SemiBoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: whiteTextColor, fontWeight: FontWeight.w600, fontSize: 16));
+        color: whiteTextColor, fontWeight: FontWeight.w600, fontSize: 14));
 
 TextStyle tsParagraph16MediumWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: whiteTextColor, fontWeight: FontWeight.w500, fontSize: 16));
+        color: whiteTextColor, fontWeight: FontWeight.w500, fontSize: 14));
 
 TextStyle tsParagraph16BoldBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: primaryTextColor, fontWeight: FontWeight.w700, fontSize: 16));
+        color: primaryTextColor, fontWeight: FontWeight.w700, fontSize: 14));
 
 TextStyle tsParagraph16MediumBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: primaryTextColor, fontWeight: FontWeight.w500, fontSize: 16));
+        color: primaryTextColor, fontWeight: FontWeight.w500, fontSize: 14));
 
 TextStyle tsParagraph16BoldGrey = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: greyTextColor, fontWeight: FontWeight.w700, fontSize: 16));
+        color: greyTextColor, fontWeight: FontWeight.w700, fontSize: 14));
 
 TextStyle tsParagraph12BoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 12));
+        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 10));
 
 TextStyle tsParagraph12SemiBoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: whiteTextColor, fontWeight: FontWeight.w600, fontSize: 12));
+        color: whiteTextColor, fontWeight: FontWeight.w600, fontSize: 10));
 
 TextStyle tsParagraph12MediumWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: whiteTextColor, fontWeight: FontWeight.w500, fontSize: 12));
+        color: whiteTextColor, fontWeight: FontWeight.w500, fontSize: 10));
 
 TextStyle tsParagraph12BoldBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: primaryTextColor, fontWeight: FontWeight.w700, fontSize: 12));
+        color: primaryTextColor, fontWeight: FontWeight.w700, fontSize: 10));
 
 TextStyle tsParagraph12MediumBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: primaryTextColor, fontWeight: FontWeight.w500, fontSize: 12));
+        color: primaryTextColor, fontWeight: FontWeight.w500, fontSize: 10));
 
 TextStyle tsParagraph12MediumGrey = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: greyTextColor, fontWeight: FontWeight.w500, fontSize: 12));
+        color: greyTextColor, fontWeight: FontWeight.w500, fontSize: 10));
 
 TextStyle tsParagraph10MediumBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: greyTextColor, fontWeight: FontWeight.w500, fontSize: 10));
+        color: greyTextColor, fontWeight: FontWeight.w500, fontSize: 8));
 
 
 //IMAGE ASSETS
