@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_pancasila_aceh/app/global_component/hero_component.dart';
 import 'package:web_pancasila_aceh/app/pages/history_page/components/history_component_two_desktop.dart';
+import 'package:web_pancasila_aceh/app/pages/history_page/components/history_component_two_mobile.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 
 
@@ -13,7 +14,7 @@ class HistoryPageView extends ResponsiveScreenState {
   }
 
   @override
-  Widget buildDesktopPage() {
+  Widget buildDesktopPage(context) {
     // TODO: implement buildDesktopPage
     return Scaffold(
       backgroundColor: Colors.white,
@@ -33,16 +34,18 @@ class HistoryPageView extends ResponsiveScreenState {
   }
 
   @override
-  Widget buildMobilePage() {
+  Widget buildMobilePage(context) {
     // TODO: implement buildMobilePage
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
       body: Container(
         width: double.infinity,
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text("This is Mobile Page")
+              HeroComponent(imagePath: "assets/images/sejarah_landing.jpg", headingText: "Sejarah Provinsi Aceh", subHeadingText: "Aceh dari Zaman ke Zaman"),
+              SizedBox(height: 50),
+              HistoryComponentTwoMobile()
             ],
           ),
         ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_pancasila_aceh/app/global_component/index.dart';
+import 'package:web_pancasila_aceh/app/pages/landing_page/components/index.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 
 class LandingPageView extends ResponsiveScreenState {
@@ -10,15 +11,16 @@ class LandingPageView extends ResponsiveScreenState {
   }
 
   @override
-  Widget buildDesktopPage() {
+  Widget buildDesktopPage(context) {
     // TODO: implement buildDesktopPage
     return Scaffold(
       backgroundColor: Colors.yellow,
       body: Container(
         width: double.infinity,
-        child: const SingleChildScrollView(
+        child: SingleChildScrollView(
           child: Column(
             children: [
+              
               Footer()
             ],
           ),
@@ -28,7 +30,7 @@ class LandingPageView extends ResponsiveScreenState {
   }
 
   @override
-  Widget buildMobilePage() {
+  Widget buildMobilePage(context) {
     // TODO: implement buildMobilePage
     return Scaffold(
       backgroundColor: Colors.grey,
