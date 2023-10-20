@@ -91,7 +91,7 @@ TextStyle tsHeading4BoldGrey = GoogleFonts.poppins(
 
 TextStyle tsParagraph18BoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
-        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 18));
+        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 14));
 
 TextStyle tsParagraph16SemiBoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
