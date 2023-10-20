@@ -28,48 +28,66 @@ class HeroComponent extends ResponsiveScreenState {
     final double width = mediaQuery.width;
     final double height = mediaQuery.height;
 
-    return Stack(
-      children: [
-        //Image
-        Container(
-          width: width,
-          height: height,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(imagePath),
-              fit: width < 1175 ? BoxFit.fitHeight : BoxFit.fitWidth,
+    return SizedBox(
+      height: height,
+      child: Stack(
+        children: [
+          //Image
+          Container(
+            width: width,
+            height: height,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(imagePath),
+                fit: width < 1175 ? BoxFit.fitHeight : BoxFit.fitWidth,
+              ),
             ),
           ),
-        ),
 
-        //Gradient & Content
-        Container(
-          width: width,
-          height: height,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.bottomCenter,
-              end: Alignment.center,
-              colors: [Colors.black, Colors.black.withOpacity(0)],
+          //Gradient & Content
+          Container(
+            width: width,
+            height: height,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.bottomCenter,
+                end: Alignment.center,
+                colors: [Colors.black, Colors.black.withOpacity(0)],
+              ),
+            ),
+            child: Padding(
+              padding:
+                  EdgeInsets.only(left: width * 0.057, bottom: height * 0.18),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(subHeadingText, style: tsHeading3MediumWhite),
+                  Text(headingText.toUpperCase(), style: tsDisplayBoldWhite),
+                ],
+              ),
             ),
           ),
-          child: Padding(
-            padding:
-                EdgeInsets.only(left: width * 0.057, bottom: height * 0.12),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(subHeadingText, style: tsHeading3MediumWhite),
-                Text(headingText.toUpperCase(), style: tsDisplayBoldWhite),
-              ],
-            ),
-          ),
-        ),
 
-        //Navbar
-        Center(child: TopNavigationBar()),
-      ],
+          //Navbar
+          TopNavigationBar(),
+
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              height: 74,
+              width: width,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(70),
+                  topRight: Radius.circular(70),
+                ),
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 
@@ -80,51 +98,69 @@ class HeroComponent extends ResponsiveScreenState {
     final double width = mediaQuery.width;
     final double height = mediaQuery.height;
 
-    return Stack(
-      children: [
-        //Image
-        Container(
-          width: width,
-          height: height,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(imagePath),
-              fit: width < 1175 ? BoxFit.fitHeight : BoxFit.fitWidth,
+    return SizedBox(
+      height: height,
+      child: Stack(
+        children: [
+          //Image
+          Container(
+            width: width,
+            height: height,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(imagePath),
+                fit: width < 1175 ? BoxFit.fitHeight : BoxFit.fitWidth,
+              ),
             ),
           ),
-        ),
 
-        //Gradient & Content
-        Container(
-          width: width,
-          height: height,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.bottomCenter,
-              end: Alignment.center,
-              colors: [Colors.black38, Colors.black38.withOpacity(0)],
+          //Gradient & Content
+          Container(
+            width: width,
+            height: height,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.bottomCenter,
+                end: Alignment.center,
+                colors: [Colors.black38, Colors.black38.withOpacity(0)],
+              ),
+            ),
+            child: Padding(
+              padding: EdgeInsets.only(left: width * 0.057),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    headingText.toUpperCase(),
+                    style: tsHeading2BoldWhite,
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(subHeadingText, style: tsParagraph16MediumWhite),
+                ],
+              ),
             ),
           ),
-          child: Padding(
-            padding: EdgeInsets.only(left: width * 0.057),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(
-                  headingText.toUpperCase(),
-                  style: tsHeading2BoldWhite,
-                  textAlign: TextAlign.center,
+
+          //Navbar
+          TopNavigationBar(),
+
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              height: 54,
+              width: width,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(70),
+                  topRight: Radius.circular(70),
                 ),
-                Text(subHeadingText, style: tsParagraph16MediumWhite),
-              ],
+              ),
             ),
-          ),
-        ),
-
-        //Navbar
-        Center(child: TopNavigationBar()),
-      ],
+          )
+        ],
+      ),
     );
   }
 }
