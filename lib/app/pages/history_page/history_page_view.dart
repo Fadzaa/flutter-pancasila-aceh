@@ -43,7 +43,7 @@ class HistoryPageView extends ResponsiveScreenState {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              // HeroComponent(imagePath: "assets/images/sejarah_landing.jpg", headingText: "Sejarah Provinsi Aceh", subHeadingText: "Aceh dari Zaman ke Zaman"),
+              HeroComponent(imagePath: "assets/images/sejarah_landing.jpg", headingText: "Sejarah Provinsi Aceh", subHeadingText: "Aceh dari Zaman ke Zaman"),
               SizedBox(height: 50),
               HistoryComponentTwoMobile()
             ],

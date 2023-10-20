@@ -62,9 +62,16 @@ class HistoryComponentTwoMobile extends StatelessWidget {
 
           SizedBox(height: 20),
 
-          Text(
-            "         Banda Aceh – Masjid Raya Baiturrahman, Banda Aceh salah satu destinasi wisata religi favorit wisatawan di Kota Banda Aceh. Masjid bersejarah ini bukan hanya ikon Serambi Mekkah, tapi juga simbol perjuangan dan penyebaran Islam di Indonesia hingga semenjung Asia Tenggara.“Dengan latar belakang sejarah itu, wajar kalau keberadaan masjid ini mengundang banyak perhatian masyarakat dunia yang ingin mengetahui sejarah Aceh maupun perkembangan Islam di nusantara,” kata Gubernur Aceh, Zaini Abdullah.",
-            style: tsParagraph12MediumBlack,
+          RichText(
+            text: TextSpan(
+                text: '         Banda Aceh – ',
+                style: tsParagraph12BoldBlack,
+                children: [
+                  TextSpan(
+                      text: 'Masjid Raya Baiturrahman, Banda Aceh salah satu destinasi wisata religi favorit wisatawan di Kota Banda Aceh. Masjid bersejarah ini bukan hanya ikon Serambi Mekkah, tapi juga simbol perjuangan dan penyebaran Islam di Indonesia hingga semenjung Asia Tenggara.“Dengan latar belakang sejarah itu, wajar kalau keberadaan masjid ini mengundang banyak perhatian masyarakat dunia yang ingin mengetahui sejarah Aceh maupun perkembangan Islam di nusantara,” kata Gubernur Aceh, Zaini Abdullah.',
+                      style: tsParagraph12MediumBlack
+                  )
+                ]),
           ),
 
           SizedBox(height: 10),
