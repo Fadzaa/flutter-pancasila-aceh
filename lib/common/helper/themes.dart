@@ -62,10 +62,6 @@ TextStyle tsHeading5MediumBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor, fontWeight: FontWeight.w500, fontSize: 16));
 
-TextStyle tsHeadingMobile = GoogleFonts.poppins(
-    textStyle: const TextStyle(
-        color: primaryTextColor, fontWeight: FontWeight.w700, fontSize: 25));
-
 TextStyle tsFooter({bool isHeading = false}) {
   return GoogleFonts.poppins(
       textStyle: TextStyle(
@@ -76,6 +72,9 @@ TextStyle tsFooter({bool isHeading = false}) {
 
 
 //FONT STYLES MOBILE
+TextStyle tsHeadingMobile = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor, fontWeight: FontWeight.w700, fontSize: 25));
 
 TextStyle tsHeading2BoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
