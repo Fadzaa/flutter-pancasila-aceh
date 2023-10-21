@@ -2,8 +2,7 @@ import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:web_pancasila_aceh/app/pages/economic_page/widget/dekstop/economic_card1_widget.dart';
-import 'package:web_pancasila_aceh/app/pages/economic_page/widget/dekstop/economic_card2_widget.dart';
+import 'package:web_pancasila_aceh/app/pages/economic_page/widget/economic_card2_widget.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 
 class EconomicalComponentThree extends StatelessWidget {
