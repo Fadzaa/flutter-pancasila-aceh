@@ -19,10 +19,10 @@ class LandingPageView extends StatelessWidget {
               //Hero Component Desktop Mobile Done
 
               // LandingComponentTwo(), //Mobile Desktop Belum
-              LandingComponentThree(), //Mobile Desktop Done
-              LandingComponentFour(),
-              // LandingComponentFive(),
-              Footer()
+              // LandingComponentThree(), //Mobile Desktop Done
+              // LandingComponentFour(),
+              LandingComponentFive(),
+              // Footer()
             ],
           ),
         ),
