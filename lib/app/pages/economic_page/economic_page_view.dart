@@ -18,6 +18,7 @@ class EconomicPageView extends ResponsiveScreenState {
     return super.build(context);
   }
 
+  //
   @override
   Widget buildDesktopPage(context) {
     // TODO: implement buildDesktopPage
