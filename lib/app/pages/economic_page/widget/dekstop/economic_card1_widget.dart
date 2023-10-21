@@ -19,7 +19,7 @@ class EconomicCardHorizontal extends StatelessWidget {
     double width = MediaQuery.sizeOf(context).width;
     double height = MediaQuery.sizeOf(context).height;
 
-//
+
     return Container(
       margin: EdgeInsets.symmetric(horizontal: width * 0.15),
       width: width,
