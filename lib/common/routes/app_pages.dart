@@ -8,6 +8,7 @@ import 'package:web_pancasila_aceh/app/pages/landing_page/landing_page_view.dart
 import 'package:web_pancasila_aceh/app/pages/recognize_page/recognize_page_binding.dart';
 import 'package:web_pancasila_aceh/app/pages/recognize_page/recognize_page_view.dart';
 
+
 part 'app_routes.dart';
 
 class AppPages {
@@ -32,9 +33,10 @@ class AppPages {
         binding: EconomicPageBinding(),
         transition: Transition.noTransition),
     GetPage(
-        name: _Paths.RECOGNIZE_PAGE,
-        page: () => RecognizePageView(),
-        binding: RecognizePageBinding(),
-        transition: Transition.noTransition),
+      name: _Paths.RECOGNIZE_PAGE,
+      page: () => RecognizePageView(),
+      binding: RecognizePageBinding(),
+      transition: Transition.noTransition
+    ),
   ];
 }

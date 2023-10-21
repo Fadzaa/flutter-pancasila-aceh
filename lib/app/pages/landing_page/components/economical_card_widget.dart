@@ -17,32 +17,40 @@ class EconomicalCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+     double width = MediaQuery.sizeOf(context).width;
+    double height = MediaQuery.sizeOf(context).height;
+
     return Container(
-      width: MediaQuery.sizeOf(context).width * 0.4,
-      height: MediaQuery.sizeOf(context).width * 0.33,
+      width: width * 0.5,
+      height: height * 0.8,
       decoration: BoxDecoration(
         color: Color.fromARGB(255, 255, 255, 255),
         borderRadius: BorderRadius.all(
             Radius.circular(28)
         ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            offset: Offset(0, 3),
+            blurRadius: 6,
+          ),
+        ],
       ),
       child: Stack(
         children: [
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              //Center Profession Image
-              Center(
-                child: Container(
-                  width: MediaQuery.sizeOf(context).width * 0.4,
-                  height: MediaQuery.sizeOf(context).width * 0.18,
-                  margin: EdgeInsets.only(top: 17, left: 16, right: 16),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(28),
-                    image: DecorationImage(
-                      image: AssetImage(professionImage),
-                      fit: BoxFit.fill,
-                    ),
+              Container(
+                width: width * 0.5,
+                height: height * 0.45,
+                margin: EdgeInsets.only(top: 17, left: 16, right: 16),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(28),
+                  image: DecorationImage(
+                    image: AssetImage(professionImage),
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
