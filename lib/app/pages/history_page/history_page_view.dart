@@ -5,6 +5,10 @@ import 'package:web_pancasila_aceh/app/global_component/index.dart';
 class HistoryPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final Size mediaQuery = MediaQuery.of(context).size;
+    final double width = mediaQuery.width;
+    final double height = mediaQuery.height;
+
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
@@ -17,8 +21,16 @@ class HistoryPageView extends StatelessWidget {
                   headingText: "Sejarah Provinsi Aceh",
                   subHeadingText: "Aceh dari Zaman ke Zaman"
               ),
-              SizedBox(height: 50,),
+
+              SizedBox(height: height * 0.1),
+
               HistoryComponentOne(),
+
+              SizedBox(height: height * 0.125),
+
+              HistoryComponentTwo(),
+
+              Footer(),
             ],
           ),
         ),
