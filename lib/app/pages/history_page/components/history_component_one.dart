@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
@@ -18,10 +19,10 @@ class HistoryComponentOne extends ResponsiveScreenState {
 
     return Container(
       width: width,
-      height: height,
-      margin: EdgeInsets.symmetric(horizontal: 100),
+      margin: EdgeInsets.symmetric(horizontal: width * 0.1),
       child: Column(
         children: [
+          SizedBox(height: height * 0.05),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,9 +30,10 @@ class HistoryComponentOne extends ResponsiveScreenState {
               Container(
                   width: width * 0.15,
                   height: height * 0.45,
-                  child: Text(
+                  child: AutoSizeText(
                     "Masjid \nBaiturrahman, Ikon \nAceh yang \nJadi \nPerhatian \nDunia",
                     style: tsHeading2SemiBoldBlack,
+                    group: AutoSizeGroup(),
                   )),
 
               Container(
@@ -48,7 +50,7 @@ class HistoryComponentOne extends ResponsiveScreenState {
                       ),
                     ),
 
-                    SizedBox(height: 25),
+                    SizedBox(height: height * 0.025),
 
                     Text(
                       "Masjid Baiturrahman, Aceh",
@@ -64,19 +66,21 @@ class HistoryComponentOne extends ResponsiveScreenState {
             ],
           ),
 
-          SizedBox(height: 50),
+          SizedBox(height: height * 0.05),
 
           Text(
             "         Banda Aceh – Masjid Raya Baiturrahman, Banda Aceh salah satu destinasi wisata religi favorit wisatawan di Kota Banda Aceh. Masjid bersejarah ini bukan hanya ikon Serambi Mekkah, tapi juga simbol perjuangan dan penyebaran Islam di Indonesia hingga semenjung Asia Tenggara.“Dengan latar belakang sejarah itu, wajar kalau keberadaan masjid ini mengundang banyak perhatian masyarakat dunia yang ingin mengetahui sejarah Aceh maupun perkembangan Islam di nusantara,” kata Gubernur Aceh, Zaini Abdullah.",
             style: tsHeading5MediumBlack,
           ),
 
-          SizedBox(height: 10),
+          SizedBox(height: height * 0.01),
 
           Text(
             "         Masjid dibangun sejak abad 17 ini selama ini ramai dikunjungi wisatawan baik dalam maupun luar negeri. Terutama dari Malaysia. Bagi warga negeri Jiran yang berkunjung ke Aceh, mereka serasa wajib datang dulu ke Masjid Baiturrahman. “Ini tentu suatu kemuliaan bagi kita,” ujar Zaini.Dengan pembangunan lanskap, infrasruktur serta perluasan area masjid yang sudah dimulai dari kemarin, diharapkan akan semakin banyak wisatawan yang berkunjung ke Masjid Baiturrahman pada masa mendatang.",
             style: tsHeading5MediumBlack,
-          )
+          ),
+
+          SizedBox(height: height * 0.25),
         ],
       ),
     );
@@ -90,7 +94,6 @@ class HistoryComponentOne extends ResponsiveScreenState {
 
     return Container(
       width: width,
-      height: height,
       margin: EdgeInsets.symmetric(horizontal: width * 0.1),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -103,14 +106,15 @@ class HistoryComponentOne extends ResponsiveScreenState {
               Container(
                   width: width * 0.35,
                   height: height * 0.22,
-                  child: Text(
+                  child: AutoSizeText(
                     "Masjid \nBaiturrah\nman, Ikon \nAceh \nyang Jadi \nPerhatian \nDunia",
+                    group: AutoSizeGroup(),
                     style: GoogleFonts.poppins(
                         textStyle: const TextStyle(
                             color: greyTextColor,
                             fontWeight: FontWeight.w700,
                             fontSize: 16
-                        )
+                        ),
                     ),
                   )),
 
@@ -133,11 +137,11 @@ class HistoryComponentOne extends ResponsiveScreenState {
             ],
           ),
 
-          SizedBox(height: 15,),
+          SizedBox(height: height * 0.015),
 
           Text("Masjid Baiturrahman, Aceh", style: tsParagraph12MediumGrey),
 
-          SizedBox(height: 20),
+          SizedBox(height: height * 0.02),
 
           RichText(
             text: TextSpan(
@@ -151,12 +155,14 @@ class HistoryComponentOne extends ResponsiveScreenState {
                 ]),
           ),
 
-          SizedBox(height: 10),
+          SizedBox(height: height * 0.01),
 
           Text(
             "         Masjid dibangun sejak abad 17 ini selama ini ramai dikunjungi wisatawan baik dalam maupun luar negeri. Terutama dari Malaysia. Bagi warga negeri Jiran yang berkunjung ke Aceh, mereka serasa wajib datang dulu ke Masjid Baiturrahman. “Ini tentu suatu kemuliaan bagi kita,” ujar Zaini.Dengan pembangunan lanskap, infrasruktur serta perluasan area masjid yang sudah dimulai dari kemarin, diharapkan akan semakin banyak wisatawan yang berkunjung ke Masjid Baiturrahman pada masa mendatang.",
             style: tsParagraph12MediumBlack,
-          )
+          ),
+
+          SizedBox(height: height * 0.125),
         ],
       ),
     );

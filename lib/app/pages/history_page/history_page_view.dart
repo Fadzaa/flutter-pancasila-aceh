@@ -21,15 +21,8 @@ class HistoryPageView extends StatelessWidget {
                   headingText: "Sejarah Provinsi Aceh",
                   subHeadingText: "Aceh dari Zaman ke Zaman"
               ),
-
-              SizedBox(height: height * 0.1),
-
               HistoryComponentOne(),
-
-              SizedBox(height: height * 0.125),
-
               HistoryComponentTwo(),
-
               Footer(),
             ],
           ),

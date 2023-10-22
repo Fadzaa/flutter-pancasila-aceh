@@ -19,7 +19,7 @@ class HistoryComponentTwo extends ResponsiveScreenState {
 
     return Container(
       width: width,
-      margin: EdgeInsets.symmetric(horizontal: width * 0.08),
+      margin: EdgeInsets.symmetric(horizontal: width * 0.1),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
