@@ -12,18 +12,18 @@ class LandingPageView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              // HeroComponent(
-              //     imagePath: "assets/images/bg_hero_landing.png",
-              //     headingText: "Provinsi Aceh",
-              //     subHeadingText: "Pancacita, Lima Cita - Cita"),
+              HeroComponent(
+                  imagePath: "assets/images/bg_hero_landing.png",
+                  headingText: "Provinsi Aceh",
+                  subHeadingText: "Pancacita, Lima Cita - Cita"),
 
-              //Hero Component Desktop Mobile Done
+              
 
-              // LandingComponentTwo(), //Mobile Desktop Belum
-              // LandingComponentThree(), //Mobile Desktop Done
-              LandingComponentFour(), //Mobile not y
-              // LandingComponentFive(), // Mobile Desktop Done
-              // Footer() // Mobile Desktop Done
+              // const LandingComponentTwo(), //Mobile Desktop Belum
+              LandingComponentThree(), //Mobile Desktop Done
+              LandingComponentFour(), //Mobile Desktop Done
+              LandingComponentFive(), // Mobile Desktop Done
+              Footer() // Mobile Desktop Done
             ],
           ),
         ),
