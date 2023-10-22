@@ -6,13 +6,13 @@ import 'package:web_pancasila_aceh/common/helper/themes.dart';
 class RecognizeComponentTwo extends ResponsiveScreenState {
   RecognizeComponentTwo({
     Key? key,
-    });
+  });
 
   @override
   Widget build(BuildContext context) {
     return super.build(context);
   }
-  
+
   @override
   Widget buildDesktopPage(BuildContext context) {
     return Container(
@@ -120,7 +120,7 @@ class RecognizeComponentTwo extends ResponsiveScreenState {
       ),
     );
   }
-  
+
   @override
   Widget buildMobilePage(BuildContext context) {
     return Container(
@@ -171,7 +171,7 @@ class RecognizeComponentTwo extends ResponsiveScreenState {
                             Colors.black.withOpacity(0.55)
                           ])),
                   child: Padding(
-                    padding: const EdgeInsets.fromLTRB(43, 0, 43, 43),
+                    padding: const EdgeInsets.fromLTRB(26, 0, 26, 28),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -183,13 +183,15 @@ class RecognizeComponentTwo extends ResponsiveScreenState {
                         SizedBox(
                           height: 18,
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.end,
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text(
                               "Hidangan bebek panggang atau goreng khas Aceh yang disajikan dengan saus pedas berbumbu kaya.",
                               style: tsParagraph12MediumWhite,
+                            ),
+                            SizedBox(
+                              height: 40,
                             ),
                             ElevatedButton(
                                 onPressed: () {},
@@ -199,11 +201,11 @@ class RecognizeComponentTwo extends ResponsiveScreenState {
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(34),
                                     ),
-                                    fixedSize: Size(146, 49)),
+                                    fixedSize: Size(109, 32)),
                                 child: Text("Lihat",
                                     style: GoogleFonts.poppins(
                                         color: actionColor,
-                                        fontSize: 18,
+                                        fontSize: 12,
                                         fontWeight: FontWeight.w600)))
                           ],
                         ),
