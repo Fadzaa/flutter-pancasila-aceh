@@ -19,11 +19,11 @@ class RecognizePageView extends StatelessWidget {
 
               // RecognizeComponentOne(), // Mobile Desktop Done
 
-              RecognizeComponentTwo(), // Mobile Desktop Done
+              // RecognizeComponentTwo(), // Mobile Desktop Done
 
               // RecognizeComponentThree(), //Component Three not complete at all
 
-              // RecognizeComponentFour(), //Fix Button Size
+              RecognizeComponentFour(), //Mobile Desktop Done
 
               Footer()
             ],
