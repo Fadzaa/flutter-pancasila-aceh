@@ -21,9 +21,9 @@ class RecognizePageView extends StatelessWidget {
 
               // RecognizeComponentTwo(), // Mobile Desktop Done
 
-              // RecognizeComponentThree(), //Component Three not complete at all
+              RecognizeComponentThree(), //Component Three not complete at all
 
-              RecognizeComponentFour(), //Mobile Desktop Done
+              // RecognizeComponentFour(), //Mobile Desktop Done
 
               Footer()
             ],
