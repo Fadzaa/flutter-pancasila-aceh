@@ -28,8 +28,19 @@ The features of AcehKu include:
 
 ## Dependencies Used
 
-- Flutter Web
-- GetX State Management
+The project relies on the following third-party packages:
+
+- **google_fonts: ^6.0.0**: A package to use Google Fonts in your Flutter app.
+- **cupertino_icons: ^1.0.2**: Flutter's iOS-style icons.
+- **flutter_svg: ^2.0.7**: A package to use SVG files as Flutter widgets.
+- **flutter_staggered_grid_view: ^0.7.0**: Provides staggered grid view for Flutter.
+- **auto_size_text: ^3.0.0**: Automatically resizes text to fit perfectly within its container.
+- **responsive_grid_list: ^1.3.2**: Allows creating responsive grid lists in Flutter.
+- **get: 4.6.5**: State management package that simplifies managing app state.
+- **carousel_slider: ^4.2.1**: A carousel slider package for Flutter.
+
+These packages are crucial for various functionalities and UI elements within the project. Be sure to refer to the package documentation for usage instructions and additional details.
+
 
 ## Project Structure
 
