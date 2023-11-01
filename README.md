@@ -10,6 +10,7 @@ AcehKu is a website dedicated to showcasing Aceh's cultural heritage, including 
 - [Project Structure](#project-structure)
 - [Setup](#setup)
 - [Screenshots](#screenshots)
+- [Team Members](#team-members)
 - [License](#license)
 
 ## About This Project
