@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:web_pancasila_aceh/app/pages/detail_page/detail_wisata_page/detail_wisata_page_view.dart';
 import 'package:web_pancasila_aceh/app/pages/economic_page/economic_page_binding.dart';
 import 'package:web_pancasila_aceh/app/pages/economic_page/economic_page_view.dart';
 import 'package:web_pancasila_aceh/app/pages/history_page/history_page_binding.dart';
@@ -13,7 +14,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.RECOGNIZE_PAGE;
+  static const INITIAL = Routes.DETAIL_WISATA_PAGE;
 
   static final routes = [
     GetPage(
@@ -35,6 +36,10 @@ class AppPages {
         name: _Paths.RECOGNIZE_PAGE,
         page: () => RecognizePageView(),
         binding: RecognizePageBinding(),
+        transition: Transition.noTransition),
+    GetPage(
+        name: _Paths.DETAIL_WISATA_PAGE,
+        page: () => DetailWisataPageView(),
         transition: Transition.noTransition),
   ];
 }
