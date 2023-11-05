@@ -38,7 +38,7 @@ class HeroComponentDetail extends ResponsiveScreenState {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(imagePath),
-                fit: width < 1041 ? BoxFit.fitHeight : BoxFit.fitWidth,
+                fit: BoxFit.fitWidth,
               ),
             ),
           ),
@@ -89,7 +89,7 @@ class HeroComponentDetail extends ResponsiveScreenState {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(imagePath),
-                fit: BoxFit.fitHeight,
+                fit: width < 500 ? BoxFit.fitHeight : BoxFit.fitWidth,
               ),
             ),
           ),

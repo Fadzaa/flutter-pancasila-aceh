@@ -15,7 +15,7 @@ class DetailWisataPageView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-
+              HeroComponentDetail(imagePath: 'assets/images/wisata_pantai_pasir_putih_hero.png', headingText: 'WISATA PROVINSI ACEH')
             ],
           ),
         ),
