@@ -62,6 +62,10 @@ TextStyle tsHeading5MediumBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor, fontWeight: FontWeight.w500, fontSize: 16));
 
+TextStyle tsHeading5RegularBlack = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor, fontWeight: FontWeight.w400, fontSize: 16));
+
 TextStyle tsFooter({bool isHeading = false}) {
   return GoogleFonts.poppins(
       textStyle: TextStyle(
@@ -134,6 +138,10 @@ TextStyle tsParagraph12BoldBlack = GoogleFonts.poppins(
 TextStyle tsParagraph12MediumBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor, fontWeight: FontWeight.w500, fontSize: 10));
+
+TextStyle tsParagraph12RegularBlack = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor, fontWeight: FontWeight.w400, fontSize: 10));
 
 TextStyle tsParagraph12MediumGrey = GoogleFonts.poppins(
     textStyle: const TextStyle(
