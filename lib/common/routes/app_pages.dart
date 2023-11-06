@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:web_pancasila_aceh/app/pages/detail_page/detail_budaya_page/detail_budaya_page_view.dart';
 import 'package:web_pancasila_aceh/app/pages/detail_page/detail_kuliner_page/detail_kuliner_page_view.dart';
 import 'package:web_pancasila_aceh/app/pages/detail_page/detail_wisata_page/detail_wisata_page_view.dart';
 import 'package:web_pancasila_aceh/app/pages/economic_page/economic_page_binding.dart';
@@ -45,6 +46,10 @@ class AppPages {
     GetPage(
         name: _Paths.DETAIL_KULINER_PAGE,
         page: () => DetailKulinerPageView(),
+        transition: Transition.noTransition),
+    GetPage(
+        name: _Paths.DETAIL_BUDAYA_PAGE,
+        page: () => DetailBudayaPageView(),
         transition: Transition.noTransition),
   ];
 }

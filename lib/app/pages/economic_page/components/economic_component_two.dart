@@ -25,5 +25,6 @@ Widget economicComponentTwo() {
         professionImage: "assets/images/perekonomian_pertanian.png"
       )
     ],
+    
   );
 }
