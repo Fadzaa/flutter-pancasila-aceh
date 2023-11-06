@@ -8,6 +8,7 @@ abstract class Routes {
   static const ECONOMIC_PAGE = _Paths.ECONOMIC_PAGE;
   static const RECOGNIZE_PAGE = _Paths.RECOGNIZE_PAGE;
   static const DETAIL_WISATA_PAGE = _Paths.DETAIL_WISATA_PAGE;
+  static const DETAIL_KULINER_PAGE = _Paths.DETAIL_KULINER_PAGE;
 }
 
 abstract class _Paths {
@@ -17,4 +18,5 @@ abstract class _Paths {
   static const ECONOMIC_PAGE = '/economic';
   static const RECOGNIZE_PAGE = '/recognize';
   static const DETAIL_WISATA_PAGE = '/detail-wisata';
+  static const DETAIL_KULINER_PAGE = '/detail-kuliner';
 }
