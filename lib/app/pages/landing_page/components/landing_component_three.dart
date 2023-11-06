@@ -5,11 +5,8 @@ import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 
 class LandingComponentThree extends ResponsiveScreenState {
-  LandingComponentThree({
-    Key? key,
-  });
-
-  FoodGallery foodGallery = FoodGallery(backgrounds: [
+  final FoodGallery foodGallery = FoodGallery(
+    backgrounds: [
     'assets/images/kuliner_sie_itik.jpg',
     'assets/images/kuliner_sate_matang.jpg',
     'assets/images/kuliner_mie_aceh.jpg',

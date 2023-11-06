@@ -62,6 +62,10 @@ TextStyle tsHeading5MediumBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor, fontWeight: FontWeight.w500, fontSize: 16));
 
+TextStyle tsHeading5RegularBlack = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor, fontWeight: FontWeight.w400, fontSize: 16));
+
 TextStyle tsFooter({bool isHeading = false}) {
   return GoogleFonts.poppins(
       textStyle: TextStyle(
@@ -70,11 +74,14 @@ TextStyle tsFooter({bool isHeading = false}) {
           fontSize: isHeading ? 18 : 16));
 }
 
-
 //FONT STYLES MOBILE
 TextStyle tsHeadingMobile = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor, fontWeight: FontWeight.w700, fontSize: 25));
+
+TextStyle tsHeadingMobileWhite = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 25));
 
 TextStyle tsHeading2BoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
@@ -132,6 +139,10 @@ TextStyle tsParagraph12MediumBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: primaryTextColor, fontWeight: FontWeight.w500, fontSize: 10));
 
+TextStyle tsParagraph12RegularBlack = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: primaryTextColor, fontWeight: FontWeight.w400, fontSize: 10));
+
 TextStyle tsParagraph12MediumGrey = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: greyTextColor, fontWeight: FontWeight.w500, fontSize: 10));
@@ -139,7 +150,6 @@ TextStyle tsParagraph12MediumGrey = GoogleFonts.poppins(
 TextStyle tsParagraph10MediumBlack = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: greyTextColor, fontWeight: FontWeight.w500, fontSize: 8));
-
 
 //IMAGE ASSETS
 String iconCash = "assets/icon/icon_cash.svg";

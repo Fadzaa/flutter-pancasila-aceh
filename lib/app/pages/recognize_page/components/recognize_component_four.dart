@@ -111,7 +111,7 @@ class RecognizeComponentFour extends ResponsiveScreenState {
     return Container(
       width: MediaQuery.of(context).size.width,
       child: Padding(
-        padding: EdgeInsets.only(left: 35, top: 40),
+        padding: EdgeInsets.only(top: 40),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -129,7 +129,7 @@ class RecognizeComponentFour extends ResponsiveScreenState {
                 Column(
                   children: [
                     Container(
-                      height: 345,
+                      height: 168,
                       width: 290,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
@@ -141,7 +141,7 @@ class RecognizeComponentFour extends ResponsiveScreenState {
                               fit: BoxFit.cover)),
                     ),
                     Container(
-                      height: 345,
+                      height: 168,
                       width: 290,
                       padding: EdgeInsets.only(left: 24, right: 24, bottom: 25),
                       decoration: BoxDecoration(
@@ -151,7 +151,7 @@ class RecognizeComponentFour extends ResponsiveScreenState {
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           const Spacer(),
                           Text(
@@ -163,13 +163,13 @@ class RecognizeComponentFour extends ResponsiveScreenState {
                           ElevatedButton(
                               onPressed: () {},
                               style: ElevatedButton.styleFrom(
-                                  fixedSize: Size(146, 51),
+                                  fixedSize: Size(88, 31),
                                   backgroundColor: actionColor,
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(34))),
                               child: Text(
                                 "Lihat",
-                                style: tsParagraph12BoldBlack,
+                                style: tsParagraph12SemiBoldWhite,
                               ))
                         ],
                       ),

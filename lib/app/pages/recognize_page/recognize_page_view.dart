@@ -15,11 +15,16 @@ class RecognizePageView extends StatelessWidget {
               // HeroComponent(
               //     imagePath: "assets/images/bg_hero_recognize.png",
               //     headingText: "Kenali Provinsi Aceh",
-              //     subHeadingText: "Jelajahi Aceh Lebih Dalam"),
-              // RecognizeComponentOne(),
-              // RecognizeComponentTwo(),
-              // RecognizeComponentThree(), Fix Component Three okay
-              RecognizeComponentFour(),
+              //     subHeadingText: "Jelajahi Aceh Lebih Dalam"), // Mobile Desktop Done
+
+              // RecognizeComponentOne(), // Mobile Desktop Done
+
+              // RecognizeComponentTwo(), // Mobile Desktop Done
+
+              RecognizeComponentThree(), //Component Three not complete at all
+
+              // RecognizeComponentFour(), //Mobile Desktop Done
+
               Footer()
             ],
           ),
