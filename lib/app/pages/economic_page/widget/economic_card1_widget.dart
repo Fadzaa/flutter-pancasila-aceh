@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 
+
 class EconomicCardHorizontal extends StatelessWidget {
   const EconomicCardHorizontal({
     super.key,
@@ -18,7 +19,6 @@ class EconomicCardHorizontal extends StatelessWidget {
 
     double width = MediaQuery.sizeOf(context).width;
     double height = MediaQuery.sizeOf(context).height;
-
 
     return Container(
       margin: EdgeInsets.symmetric(horizontal: width * 0.15),

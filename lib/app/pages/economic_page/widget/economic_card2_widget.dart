@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 
+
 class EconomicCardVertical extends StatelessWidget {
   const EconomicCardVertical({
     super.key,
@@ -43,12 +44,12 @@ class EconomicCardVertical extends StatelessWidget {
             height: width * 0.2,
             margin: EdgeInsets.only(top: 17, left: 16, right: 16),
             decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(28),
-            image: DecorationImage(
-              image: AssetImage(professionImage),
-              fit: BoxFit.cover,
+              borderRadius: BorderRadius.circular(28),
+              image: DecorationImage(
+                image: AssetImage(professionImage),
+                fit: BoxFit.cover,
+              ),
             ),
-           ),
           ),
           SizedBox(height: 38),
           Text(

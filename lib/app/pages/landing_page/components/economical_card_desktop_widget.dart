@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 
-class EconomicalCard extends StatelessWidget {
-  const EconomicalCard({
+
+class EconomicalCardDesktop extends StatelessWidget {
+  const EconomicalCardDesktop({
     super.key,
     required this.professionName,
     required this.professionDescription,
@@ -18,7 +19,7 @@ class EconomicalCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-     double width = MediaQuery.sizeOf(context).width;
+    double width = MediaQuery.sizeOf(context).width;
     double height = MediaQuery.sizeOf(context).height;
 
     return Container(
@@ -45,7 +46,7 @@ class EconomicalCard extends StatelessWidget {
               Container(
                 width: width * 0.5,
                 height: height * 0.45,
-                margin: EdgeInsets.only(top: 17, left: 16, right: 16),
+                margin: EdgeInsets.only(left: width * 0.009, right: width * 0.009),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(28),
                   image: DecorationImage(
@@ -57,7 +58,7 @@ class EconomicalCard extends StatelessWidget {
               SizedBox(height: 16),
               //Container Profession Name
               Container(
-                  margin: EdgeInsets.symmetric(horizontal: 36),
+                  margin: EdgeInsets.symmetric(horizontal: width * 0.02),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -67,7 +68,7 @@ class EconomicalCard extends StatelessWidget {
                       ),
                       SvgPicture.asset(
                         'assets/icon/icon_cash.svg',
-                        width: 29,
+                        width: width * 0.02,
                       )
                     ],
                   )
@@ -75,7 +76,7 @@ class EconomicalCard extends StatelessWidget {
               SizedBox(height: 26),
               //Container Profession Description
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 36),
+                margin: EdgeInsets.symmetric(horizontal: width * 0.02),
                 child: Text(
                   professionDescription,
                   style: tsHeading4MediumBlack,

@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:web_pancasila_aceh/app/global_component/footer.dart';
 import 'package:web_pancasila_aceh/app/global_component/hero_component_detail.dart';
 import 'package:web_pancasila_aceh/app/pages/detail_page/detail_budaya_page/components/detail_budaya_component_one.dart';
-import 'package:web_pancasila_aceh/app/pages/detail_page/detail_budaya_page/components/detail_budaya_staggred.dart';
-import 'package:web_pancasila_aceh/common/helper/themes.dart';
+
 
 class DetailBudayaPageView extends StatelessWidget {
   const DetailBudayaPageView({super.key});
