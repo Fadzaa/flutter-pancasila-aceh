@@ -1,5 +1,5 @@
 
-List<Map<String, dynamic>> mockCultureCardData = [
+List<Map<String, dynamic>> mockCultureData = [
   {
     'id': 1,
     'name': 'Tari Saman',

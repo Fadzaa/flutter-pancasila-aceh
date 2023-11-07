@@ -1,5 +1,5 @@
 
-List<Map<String, dynamic>> mockFavouriteDestinationTourData = [
+List<Map<String, dynamic>> mockTourData = [
   {
     'id': 1,
     'name': 'Danau Laut Tawar',
