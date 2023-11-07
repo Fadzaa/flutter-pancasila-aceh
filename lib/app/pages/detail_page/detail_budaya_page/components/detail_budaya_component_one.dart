@@ -54,7 +54,7 @@ class DetailBudayaComponentOne extends ResponsiveScreenState {
     final double height = mediaQuery.height;
 
     return Container(
-      margin: EdgeInsets.only(top: height * 0.05),
+      margin: EdgeInsets.only(top: height * 0.05,),
       child: Column(
         children: [
           Text(
