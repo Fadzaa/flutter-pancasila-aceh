@@ -14,9 +14,13 @@ class LandingComponentFour extends ResponsiveScreenState {
 
   @override
   Widget buildDesktopPage(BuildContext context) {
+
+    double width = MediaQuery.sizeOf(context).width;
+    double height = MediaQuery.sizeOf(context).height;
+
     // TODO: implement buildDesktopPage
     return Container(
-      margin: EdgeInsets.only(left: 88, top: 34, right: 88),
+      margin: EdgeInsets.symmetric(vertical: width * 0.05, horizontal: height * 0.1),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -36,6 +40,8 @@ class LandingComponentFour extends ResponsiveScreenState {
                     textAlign: TextAlign.left,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Container(
                         width: MediaQuery.sizeOf(context).width * 0.2,
@@ -66,11 +72,11 @@ class LandingComponentFour extends ResponsiveScreenState {
                 ],
               ),
               Container(
-                margin: EdgeInsets.only(left: 400, top: 60, right: 6),
+                margin: EdgeInsets.only(left: width * 0.25, top: height * 0.1, right: 6),
                 child: Image.asset(
                   'assets/images/gubernur_foto_1.png',
-                  width: 581,
-                  height: 645,
+                  width: width * 0.4,
+                  height: height ,
                 ),
               )
             ],
@@ -78,9 +84,9 @@ class LandingComponentFour extends ResponsiveScreenState {
           Stack(
             children: [
               Container(
-                margin: EdgeInsets.only(left: 78, right: 6),
-                width: 277,
-                height: 183,
+                margin: EdgeInsets.only(left: width * 0.05, right: width * 0.01),
+                width: width * 0.18,
+                height: height * 0.25,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(15),
                   child: Image.asset(
@@ -90,9 +96,9 @@ class LandingComponentFour extends ResponsiveScreenState {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 200, right: 6),
-                width: 278,
-                height: 218,
+                margin: EdgeInsets.only(top: height * 0.28, right: width * 0.01),
+                width: width * 0.18,
+                height: height * 0.28,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(15),
                   child: Image.asset(
@@ -102,9 +108,9 @@ class LandingComponentFour extends ResponsiveScreenState {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 90, top: 435, right: 6),
-                width: 277,
-                height: 241,
+                margin: EdgeInsets.only(left: width * 0.05, top: height * 0.6, right: width * 0.01),
+                width: width * 0.18,
+                height: height * 0.28,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(15),
                   child: Image.asset(
