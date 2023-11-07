@@ -4,10 +4,8 @@ import 'package:web_pancasila_aceh/app/pages/economic_page/widget/economic_card1
 import 'package:web_pancasila_aceh/app/pages/economic_page/widget/economic_card2_widget.dart';
 import 'package:web_pancasila_aceh/app/pages/economic_page/widget/economic_card3_widget.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
-
-
-
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
+
 
 class EconomicComponentThree extends ResponsiveScreenState {
 

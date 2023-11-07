@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 
+
 class EconomicComponentOne extends ResponsiveScreenState {
 
   @override

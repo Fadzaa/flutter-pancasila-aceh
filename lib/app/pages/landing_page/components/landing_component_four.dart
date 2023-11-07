@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 
+
 class LandingComponentFour extends ResponsiveScreenState {
   LandingComponentFour({
     Key? key,

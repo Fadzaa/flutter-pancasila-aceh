@@ -5,6 +5,7 @@ import 'package:web_pancasila_aceh/app/pages/landing_page/components/economical_
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 
+
 class EconomicComponentTwo extends ResponsiveScreenState {
 
   @override

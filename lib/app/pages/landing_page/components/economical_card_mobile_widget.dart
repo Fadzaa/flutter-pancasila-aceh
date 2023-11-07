@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 
+
 class EconomicalCardMobile extends StatelessWidget {
   const EconomicalCardMobile({
     super.key,

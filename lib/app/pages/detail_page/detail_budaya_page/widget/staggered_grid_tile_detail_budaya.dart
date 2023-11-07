@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 
+
 class staggeredGridTileDetailBudaya extends ResponsiveScreenState {
   staggeredGridTileDetailBudaya({
     Key? key,

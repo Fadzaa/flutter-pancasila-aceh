@@ -4,11 +4,7 @@ import 'package:web_pancasila_aceh/app/global_component/hero_component.dart';
 import 'package:web_pancasila_aceh/app/pages/economic_page/components/economic_component_one.dart';
 import 'package:web_pancasila_aceh/app/pages/economic_page/components/economic_component_three.dart';
 import 'package:web_pancasila_aceh/app/pages/economic_page/components/economic_component_two.dart';
-
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
-
-
-
 
 
 class EconomicPageView extends ResponsiveScreenState {

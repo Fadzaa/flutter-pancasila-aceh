@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:web_pancasila_aceh/app/pages/detail_page/detail_budaya_page/components/detail_budaya_staggred.dart';
-import 'package:web_pancasila_aceh/app/pages/detail_page/detail_budaya_page/widget/staggered_grid_tile_detail_budaya.dart';
-import 'package:web_pancasila_aceh/app/pages/detail_page/detail_wisata_page/widgets/staggered_grid_tile_detail_wisata.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
+
 
 class DetailBudayaComponentOne extends ResponsiveScreenState {
 
