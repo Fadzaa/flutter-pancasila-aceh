@@ -36,9 +36,9 @@ class EconomicPageView extends ResponsiveScreenState {
               ),
               EconomicComponentOne(),
               SizedBox(height: 100),
-              economicComponentTwo(),
+              EconomicComponentTwo(),
               SizedBox(height: 90),
-              EconomicalComponentThree(),
+              EconomicComponentThree(),
               SizedBox(height: 211),
               Footer()
             ],
@@ -50,20 +50,34 @@ class EconomicPageView extends ResponsiveScreenState {
 
   @override
   Widget buildMobilePage(context) {
+
+    final double width = MediaQuery.of(context).size.width;
+    final double height = MediaQuery.of(context).size.height;
+
     // TODO: implement buildMobilePage
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Container(
         width: double.infinity,
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text("This is Mobile Page")
+              HeroComponent(
+                imagePath: "assets/images/icon_aceh_4.jpg", 
+                headingText: "PEREKONOMIAN ACEH", 
+                subHeadingText: "Aceh dengan perekonomiannya"
+              ),
+              EconomicComponentOne(),
+              SizedBox(height: height * 0.1),
+              EconomicComponentTwo(),
+              SizedBox(height: height * 0.1),
+              EconomicComponentThree(),
+              SizedBox(height: height * 0.1),
+              Footer()
             ],
           ),
         ),
       ),
     );
   }
-
 }

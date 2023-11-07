@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 
-class EconomicalCard extends StatelessWidget {
-  const EconomicalCard({
+class EconomicalCardMobile extends StatelessWidget {
+  const EconomicalCardMobile({
     super.key,
     required this.professionName,
     required this.professionDescription,
@@ -18,11 +18,11 @@ class EconomicalCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-     double width = MediaQuery.sizeOf(context).width;
+    double width = MediaQuery.sizeOf(context).width;
     double height = MediaQuery.sizeOf(context).height;
 
     return Container(
-      width: width * 0.5,
+      width: width * 0.9,
       height: height * 0.8,
       decoration: BoxDecoration(
         color: Color.fromARGB(255, 255, 255, 255),
@@ -43,9 +43,9 @@ class EconomicalCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                width: width * 0.5,
+                width: width * 0.8,
                 height: height * 0.45,
-                margin: EdgeInsets.only(top: 17, left: 16, right: 16),
+                margin: EdgeInsets.only(left: width * 0.005, right: width * 0.005),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(28),
                   image: DecorationImage(
@@ -57,17 +57,17 @@ class EconomicalCard extends StatelessWidget {
               SizedBox(height: 16),
               //Container Profession Name
               Container(
-                  margin: EdgeInsets.symmetric(horizontal: 36),
+                  margin: EdgeInsets.symmetric(horizontal: width * 0.05),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         professionName,
-                        style: tsHeading2SemiBoldBlack,
+                        style: tsHeading4BoldBlack,
                       ),
                       SvgPicture.asset(
                         'assets/icon/icon_cash.svg',
-                        width: 29,
+                        width: width * 0.05,
                       )
                     ],
                   )
@@ -75,10 +75,10 @@ class EconomicalCard extends StatelessWidget {
               SizedBox(height: 26),
               //Container Profession Description
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 36),
+                margin: EdgeInsets.symmetric(horizontal: width * 0.05),
                 child: Text(
                   professionDescription,
-                  style: tsHeading4MediumBlack,
+                  style: tsParagraph12MediumBlack,
                 ),
               ),
               SizedBox(height: 26)

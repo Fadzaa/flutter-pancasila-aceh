@@ -72,7 +72,7 @@ class LandingComponentFour extends ResponsiveScreenState {
                 ],
               ),
               Container(
-                margin: EdgeInsets.only(left: width * 0.25, top: height * 0.1, right: 7),
+                margin: EdgeInsets.only(left: width * 0.25, top: height * 0.1, right: 6),
                 child: Image.asset(
                   'assets/images/gubernur_foto_1.png',
                   width: width * 0.4,

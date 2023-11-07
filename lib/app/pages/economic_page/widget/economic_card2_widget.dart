@@ -43,12 +43,12 @@ class EconomicCardVertical extends StatelessWidget {
             height: width * 0.2,
             margin: EdgeInsets.only(top: 17, left: 16, right: 16),
             decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(28),
-            image: DecorationImage(
-              image: AssetImage(professionImage),
-              fit: BoxFit.cover,
+              borderRadius: BorderRadius.circular(28),
+              image: DecorationImage(
+                image: AssetImage(professionImage),
+                fit: BoxFit.cover,
+              ),
             ),
-           ),
           ),
           SizedBox(height: 38),
           Text(
