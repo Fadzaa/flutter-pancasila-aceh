@@ -16,7 +16,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.DETAIL_KULINER_PAGE;
+  static const INITIAL = Routes.LANDING_PAGE;
 
   static final routes = [
     GetPage(

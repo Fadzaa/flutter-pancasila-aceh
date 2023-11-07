@@ -12,18 +12,18 @@ class RecognizePageView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              // HeroComponent(
-              //     imagePath: "assets/images/bg_hero_recognize.png",
-              //     headingText: "Kenali Provinsi Aceh",
-              //     subHeadingText: "Jelajahi Aceh Lebih Dalam"), // Mobile Desktop Done
+              HeroComponent(
+                  imagePath: "assets/images/bg_hero_recognize.png",
+                  headingText: "Kenali Provinsi Aceh",
+                  subHeadingText: "Jelajahi Aceh Lebih Dalam"), // Mobile Desktop Done
 
-              // RecognizeComponentOne(), // Mobile Desktop Done
+              RecognizeComponentOne(), // Mobile Desktop Done
 
-              // RecognizeComponentTwo(), // Mobile Desktop Done
+              RecognizeComponentTwo(), // Mobile Desktop Done
 
               RecognizeComponentThree(), //Component Three not complete at all
 
-              // RecognizeComponentFour(), //Mobile Desktop Done
+              RecognizeComponentFour(), //Mobile Desktop Done
 
               Footer()
             ],
