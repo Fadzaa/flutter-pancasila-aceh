@@ -14,14 +14,14 @@ List<Map<String, dynamic>> mockEconomicCardData = [
   },
   {
     'id': 3,
-    'tour_name': 'Perkebunan',
-    'tour_image': 'Sektor perkebunan di Aceh fokus pada produksi kelapa sawit, kopi, dan karet, yang menjadi sumber utama pendapatan bagi banyak petani dan memiliki dampak penting dalam perekonomian provinsi ini.',
+    'name': 'Perkebunan',
+    'description': 'Sektor perkebunan di Aceh fokus pada produksi kelapa sawit, kopi, dan karet, yang menjadi sumber utama pendapatan bagi banyak petani dan memiliki dampak penting dalam perekonomian provinsi ini.',
     'image_url': 'https://dialeksis.com/images/web/2022/11/sawit.jpg'
   },
   {
     'id': 4,
-    'tour_name': 'Pariwisata',
-    'tour_image': 'Sektor pariwisata di Aceh berkembang pesat berkat keindahan alamnya, termasuk pantai eksotis dan pegunungan yang menarik, memberikan kontribusi penting dalam pertumbuhan ekonomi melalui kunjungan wisatawan.',
+    'name': 'Pariwisata',
+    'description': 'Sektor pariwisata di Aceh berkembang pesat berkat keindahan alamnya, termasuk pantai eksotis dan pegunungan yang menarik, memberikan kontribusi penting dalam pertumbuhan ekonomi melalui kunjungan wisatawan.',
     'image_url': 'https://cloud.jpnn.com/photo/picture/normal/20160630_025944/025944_887356_pantai_iboih.jpg'
   },
 ];
