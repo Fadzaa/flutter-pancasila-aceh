@@ -25,14 +25,7 @@ class DetailBudayaPageView extends StatelessWidget {
                 imagePath: "assets/images/budaya_aceh_hero.png", 
                 headingText: "KEBUDAYAAN PROVINSI ACEH"
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  DetailBudayaComponentStaggred(),
-                  DetailBudayaComponentOne(),
-                ],
-              ),
+              DetailBudayaComponentOne(),
               Footer(),
             ],
           ),
