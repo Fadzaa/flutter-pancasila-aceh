@@ -50,7 +50,7 @@ class EconomicalCardDesktop extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(28),
                   image: DecorationImage(
-                    image: AssetImage(professionImage),
+                    image: NetworkImage(professionImage),
                     fit: BoxFit.cover,
                   ),
                 ),

@@ -1,9 +1,11 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:web_pancasila_aceh/app/pages/landing_page/components/economical_card_desktop_widget.dart';
 import 'package:web_pancasila_aceh/app/pages/landing_page/components/economical_card_mobile_widget.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
+import 'package:web_pancasila_aceh/common/mock_data/mock_economic_card_data.dart';
 
 
 class EconomicComponentTwo extends ResponsiveScreenState {
@@ -15,6 +17,8 @@ class EconomicComponentTwo extends ResponsiveScreenState {
 
   @override
   Widget buildDesktopPage(context) {
+    final double width = MediaQuery.of(context).size.width;
+    final double height = MediaQuery.of(context).size.height;
 
     // TODO: implement buildDesktopPage
     return Column(
@@ -33,11 +37,29 @@ class EconomicComponentTwo extends ResponsiveScreenState {
           ),
         ),
         SizedBox(height: 100),
-        EconomicalCardDesktop(
-          professionName: "Pertanian", 
-          professionDescription: "Sektor pertanian di Aceh mencakup budidaya padi, kelapa sawit, kopi, karet, buah-buahan, dan sayuran, serta memiliki peran penting dalam mendukung ketahanan pangan dan perekonomian provinsi ini.", 
-          professionImage: "assets/images/perekonomian_pertanian.png"
-        )
+
+        CarouselSlider.builder(
+          // physics: const NeverScrollableScrollPhysics(),
+          options: CarouselOptions(
+            height: height * 0.8,
+            viewportFraction: 0.4,
+            enableInfiniteScroll: false,
+            enlargeCenterPage: true,
+            initialPage: 1,
+            onPageChanged: (index, reason) {
+              print(index);
+            },
+          ),
+          itemCount: mockEconomicCardData.length,
+          itemBuilder: (context, index, realIndex) {
+            return EconomicalCardDesktop(
+                professionName: mockEconomicCardData[index].name,
+                professionDescription: mockEconomicCardData[index].description,
+                professionImage: mockEconomicCardData[index].imageUrl
+            );
+          },
+        ),
+
       ],
     );
   }
