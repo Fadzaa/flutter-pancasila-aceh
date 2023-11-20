@@ -1,23 +1,33 @@
+import 'package:flutter/animation.dart';
 import 'package:get/get.dart';
 
-class LandingPageController extends GetxController {
-  //TODO: Implement LandingPageController
+class LandingPageController extends GetxController with GetSingleTickerProviderStateMixin{
+  final hoveredIndex = RxInt(-1);
+  late AnimationController animationController;
+  final isHover = false.obs;
 
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
+    animationController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1500),
+    );
   }
 
-  @override
-  void onReady() {
-    super.onReady();
+  void setHoveredIndex(int index) {
+    hoveredIndex.value = index;
+    if (index != -1) {
+      animationController.forward();
+    } else {
+      animationController.reverse();
+    }
   }
 
   @override
   void onClose() {
+    animationController.dispose();
     super.onClose();
   }
-
-  void increment() => count.value++;
 }
+
