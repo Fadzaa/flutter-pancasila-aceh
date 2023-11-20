@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:get/get.dart';
 import 'package:web_pancasila_aceh/app/pages/landing_page/widgets/staggered_grid_tile_image_kuliner.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
+import 'package:web_pancasila_aceh/common/mock_data/mock_couliner_data.dart';
+import 'package:web_pancasila_aceh/common/routes/app_pages.dart';
 
 class LandingComponentThree extends ResponsiveScreenState {
   final FoodGallery foodGallery = FoodGallery(
@@ -43,23 +46,37 @@ class LandingComponentThree extends ResponsiveScreenState {
             crossAxisCount: 6,
             mainAxisSpacing: 15,
             crossAxisSpacing: 15,
+
             children: [
+
               staggeredGridTileImageKuliner(
-                  assetPath: 'assets/images/kuliner_sie_itik.jpg',
+                onTap: () {
+                  Get.toNamed(Routes.DETAIL_KULINER_PAGE, arguments: mockCoulinerData[0]);
+                },
+                  assetPath: mockCoulinerData[0].imageCard,
                   crossAxisCellCount: 4,
-                  textValue: "Sie Itik"),
+                  textValue: mockCoulinerData[0].name),
               staggeredGridTileImageKuliner(
-                  assetPath: 'assets/images/kuliner_sate_matang.jpg',
+                  onTap: () {
+                    Get.toNamed(Routes.DETAIL_KULINER_PAGE, arguments: mockCoulinerData[1]);
+                  },
+                  assetPath: mockCoulinerData[1].imageCard,
                   crossAxisCellCount: 2,
-                  textValue: "Sate Matang"),
+                  textValue: mockCoulinerData[1].name),
               staggeredGridTileImageKuliner(
-                  assetPath: 'assets/images/kuliner_mie_aceh.jpg',
+                  onTap: () {
+                    Get.toNamed(Routes.DETAIL_KULINER_PAGE, arguments: mockCoulinerData[2]);
+                  },
+                  assetPath: mockCoulinerData[2].imageCard,
                   crossAxisCellCount: 3,
-                  textValue: "Mie Aceh"),
+                  textValue: mockCoulinerData[2].name),
               staggeredGridTileImageKuliner(
-                  assetPath: 'assets/images/kuliner_ayam_tangkap.jpg',
+                  onTap: () {
+                    Get.toNamed(Routes.DETAIL_KULINER_PAGE, arguments: mockCoulinerData[3]);
+                  },
+                  assetPath: mockCoulinerData[3].imageCard,
                   crossAxisCellCount: 3,
-                  textValue: "Ayam Tangkap"),
+                  textValue: mockCoulinerData[3].name),
             ],
           ),
         ],
