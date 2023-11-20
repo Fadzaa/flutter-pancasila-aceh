@@ -17,7 +17,7 @@ class LandingPageView extends StatelessWidget {
                   headingText: "Provinsi Aceh",
                   subHeadingText: "Pancacita, Lima Cita - Cita"),
 
-              const LandingComponentTwo(),
+              LandingComponentTwo(),
               LandingComponentThree(), //Mobile Desktop Done
               LandingComponentFour(), //Mobile Desktop Done
               LandingComponentFive(), // Mobile Desktop Done
