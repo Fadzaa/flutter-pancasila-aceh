@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:web_pancasila_aceh/app/pages/detail_page/detail_wisata_page/widgets/text_bullet_list.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
+import 'package:web_pancasila_aceh/common/model/couliner.dart';
 
 class DetailKulinerComponentTwo extends ResponsiveScreenState {
   @override
@@ -15,6 +17,8 @@ class DetailKulinerComponentTwo extends ResponsiveScreenState {
     final Size mediaQuery = MediaQuery.of(context).size;
     final double width = mediaQuery.width;
     final double height = mediaQuery.height;
+
+    Couliner couliner = Get.arguments;
 
     return Container(
       margin: EdgeInsets.symmetric(horizontal: width * 0.09),
@@ -33,8 +37,8 @@ class DetailKulinerComponentTwo extends ResponsiveScreenState {
                     width: width * 0.4,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(15),
-                      child: Image.asset(
-                        'assets/images/kuliner_ayam_tangkap_one.jpg',
+                      child: Image.network(
+                        couliner.detailImages[0],
                         fit: BoxFit.fitWidth,
                       ),
                     ),
@@ -47,8 +51,8 @@ class DetailKulinerComponentTwo extends ResponsiveScreenState {
                     width: width * 0.4,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(15),
-                      child: Image.asset(
-                        'assets/images/kuliner_ayam_tangkap_two.jpg',
+                      child: Image.network(
+                        couliner.detailImages[1],
                         fit: BoxFit.fitWidth,
                       ),
                     ),
@@ -65,8 +69,8 @@ class DetailKulinerComponentTwo extends ResponsiveScreenState {
                     width: width * 0.4,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(15),
-                      child: Image.asset(
-                        'assets/images/kuliner-ayam-tangkap-three.jpg',
+                      child: Image.network(
+                        couliner.detailImages[2],
                         fit: BoxFit.fitWidth,
                       ),
                     ),
@@ -79,8 +83,8 @@ class DetailKulinerComponentTwo extends ResponsiveScreenState {
                     width: width * 0.4,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(15),
-                      child: Image.asset(
-                        'assets/images/kuliner-ayam-tangkap-four.jpg',
+                      child: Image.network(
+                        couliner.detailImages[3],
                         fit: BoxFit.fitWidth,
                       ),
                     ),
