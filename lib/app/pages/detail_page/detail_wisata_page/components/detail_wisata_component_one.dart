@@ -16,6 +16,7 @@ class DetailWisataComponentOne extends ResponsiveScreenState {
     final double width = mediaQuery.width;
     final double height = mediaQuery.height;
 
+
     return Container(
       child: StaggeredGrid.count(
         crossAxisCount: 6,
