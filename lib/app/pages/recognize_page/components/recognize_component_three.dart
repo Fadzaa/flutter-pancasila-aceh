@@ -15,12 +15,14 @@ class RecognizeComponentThree extends ResponsiveScreenState {
 
   @override
   Widget buildDesktopPage(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     // TODO: implement buildDesktopPage
     return Container(
-      width: MediaQuery.of(context).size.width,
+      width: width,
       padding: EdgeInsets.symmetric(horizontal: 108),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
             "Selain kuliner, ada juga wisata",
@@ -33,72 +35,18 @@ class RecognizeComponentThree extends ResponsiveScreenState {
           ),
 
           //Grid Card
-          Container(
-            width: 508,
-            child: Stack(
-              children: [
-                //Grid Card
-                Container(
-                  width: 508,
-                  height: 516,
-                  margin: EdgeInsets.only(top: 130),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(35),
-                      boxShadow: [
-                        BoxShadow(
-                            blurRadius: 111,
-                            spreadRadius: 25,
-                            offset: Offset(0, 4),
-                            color: Colors.black.withOpacity(0.08))
-                      ]),
-                  padding: EdgeInsets.fromLTRB(36, 132, 36, 37),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Pantai Pasir Putih",
-                        style: GoogleFonts.poppins(
-                            color: primaryTextColor,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 28),
-                      ),
-                      Text(
-                        "Pantai yang memiliki pasir berwarna putih yang halus dan merupakan daya tarik utama bagi para pengunjung untuk berlibur dan bersantai di tepi laut.",
-                        style: GoogleFonts.poppins(
-                            color: primaryTextColor,
-                            fontWeight: FontWeight.w500,
-                            fontSize: 20),
-                        textAlign: TextAlign.center,
-                      ),
-                      ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: actionColor,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(34)),
-                              fixedSize: Size(146, 49)),
-                          child: Text("Lihat"))
-                    ],
-                  ),
-                ),
-
-                Align(
-                  alignment: Alignment.topCenter,
-                  child: Container(
-                    width: 413,
-                    height: 246,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        image: DecorationImage(
-                            image:
-                                AssetImage("assets/images/wisata_aceh_1.jpeg"),
-                            fit: BoxFit.fill)),
-                  ),
-                ),
-              ],
+          GridView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              crossAxisSpacing: 16,
+              mainAxisSpacing: 16,
             ),
+            itemCount: 4,
+            itemBuilder: (context, index) {
+              return TourCard();
+            },
           ),
 
           // //Big Container Card
@@ -262,6 +210,85 @@ class RecognizeComponentThree extends ResponsiveScreenState {
                   ),
                 ),
               ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+class TourCard extends StatelessWidget {
+  const TourCard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 508,
+      child: Stack(
+        children: [
+          //Grid Card
+          Align(
+            alignment: Alignment.topCenter,
+            child: Container(
+              width: 508,
+              height: 516,
+              margin: EdgeInsets.only(top: 130),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(35),
+                  boxShadow: [
+                    BoxShadow(
+                        blurRadius: 111,
+                        spreadRadius: 25,
+                        offset: Offset(0, 4),
+                        color: Colors.black.withOpacity(0.08))
+                  ]),
+              padding: EdgeInsets.fromLTRB(36, 132, 36, 37),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Pantai Pasir Putih",
+                    style: GoogleFonts.poppins(
+                        color: primaryTextColor,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 28),
+                  ),
+                  Text(
+                    "Pantai yang memiliki pasir berwarna putih yang halus dan merupakan daya tarik utama bagi para pengunjung untuk berlibur dan bersantai di tepi laut.",
+                    style: GoogleFonts.poppins(
+                        color: primaryTextColor,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 20),
+                    textAlign: TextAlign.center,
+                  ),
+                  ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: actionColor,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(34)),
+                          fixedSize: Size(146, 49)),
+                      child: Text("Lihat"))
+                ],
+              ),
+            ),
+          ),
+
+          Align(
+            alignment: Alignment.topCenter,
+            child: Container(
+              width: 413,
+              height: 246,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
+                      image:
+                      AssetImage("assets/images/wisata_aceh_1.jpeg"),
+                      fit: BoxFit.fill)),
             ),
           ),
         ],
