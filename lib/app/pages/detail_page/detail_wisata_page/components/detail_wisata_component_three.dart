@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:web_pancasila_aceh/app/pages/detail_page/detail_wisata_page/widgets/text_bullet_list.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
+
+import '../../../../../common/model/tour.dart';
 
 class DetailWisataComponentThree extends ResponsiveScreenState {
   @override
@@ -12,6 +15,7 @@ class DetailWisataComponentThree extends ResponsiveScreenState {
 
   @override
   Widget buildDesktopPage(context) {
+    Tour tour = Get.arguments;
     final Size mediaQuery = MediaQuery.of(context).size;
     final double width = mediaQuery.width;
     final double height = mediaQuery.height;
@@ -39,13 +43,13 @@ class DetailWisataComponentThree extends ResponsiveScreenState {
             ),
             textBulletList(
                 textValue:
-                    'Pasir Putih yang Indah: Pantai ini terkenal karena pasirnya yang putih dan halus yang membentang sepanjang pantai, menciptakan pemandangan yang sangat indah.'),
+                    tour.highlightText[0]),
             textBulletList(
                 textValue:
-                    'Ombak yang Cocok untuk Berselancar: Ombak yang cukup besar di pantai ini menjadikannya tempat yang populer bagi para peselancar, baik yang berpengalaman maupun pemula.'),
+                    tour.highlightText[1]),
             textBulletList(
                 textValue:
-                    'Pemandangan Matahari Terbenam yang Spektakuler: Pantai ini juga dikenal sebagai tempat yang sempurna untuk menikmati matahari terbenam yang memukau, menciptakan momen berkesan bagi pengunjung.'),
+                tour.highlightText[2]),
             SizedBox(height: height * 0.2),
           ],
         ));

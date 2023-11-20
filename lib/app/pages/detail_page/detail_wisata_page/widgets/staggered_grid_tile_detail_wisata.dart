@@ -21,15 +21,13 @@ class staggeredGridTileDetailWisata extends ResponsiveScreenState {
   @override
   Widget buildDesktopPage(context) {
     final Size mediaQuery = MediaQuery.of(context).size;
-    final double width = mediaQuery.width;
-    final double height = mediaQuery.height;
 
     return StaggeredGridTile.count(
       crossAxisCellCount: 2,
       mainAxisCellCount: isSmall ? 1 : 2,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(15),
-        child: Image.asset('assets/images/$pathImage.png', fit: isSmall ? BoxFit.fitWidth : BoxFit.fitHeight),
+        child: Image.network(pathImage, fit: isSmall ? BoxFit.fitWidth : BoxFit.fitHeight),
       ),
     );
   }
