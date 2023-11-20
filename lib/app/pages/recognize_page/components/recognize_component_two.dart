@@ -1,7 +1,9 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
+import 'package:web_pancasila_aceh/common/mock_data/mock_couliner_data.dart';
 
 class RecognizeComponentTwo extends ResponsiveScreenState {
   RecognizeComponentTwo({
@@ -15,6 +17,8 @@ class RecognizeComponentTwo extends ResponsiveScreenState {
 
   @override
   Widget buildDesktopPage(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
@@ -43,78 +47,26 @@ class RecognizeComponentTwo extends ResponsiveScreenState {
           ),
 
           //Temporary Padding
-          Padding(
-            padding: const EdgeInsets.only(left: 108),
-            child: Stack(
-              children: [
-                Container(
-                  height: 394,
-                  width: 968,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      image: DecorationImage(
-                          image:
-                              AssetImage("assets/images/kuliner_sie_itik.jpg"),
-                          fit: BoxFit.fill)),
-                  child: Container(
-                    height: 394,
-                    width: 968,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(40),
-                        gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [
-                              Colors.black.withOpacity(0),
-                              Colors.black.withOpacity(0.55)
-                            ])),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(43, 0, 43, 43),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Sie Itik",
-                            style: tsHeading2SemiBoldWhite,
-                          ),
-                          SizedBox(
-                            height: 18,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              SizedBox(
-                                width: 571,
-                                child: Text(
-                                  "Hidangan bebek panggang atau goreng khas Aceh yang disajikan dengan saus pedas berbumbu kaya.",
-                                  style: tsHeading3MediumWhite,
-                                ),
-                              ),
-                              ElevatedButton(
-                                  onPressed: () {},
-                                  style: ElevatedButton.styleFrom(
-                                      backgroundColor: Colors.transparent,
-                                      side: BorderSide(color: actionColor),
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(34),
-                                      ),
-                                      fixedSize: Size(146, 49)),
-                                  child: Text("Lihat",
-                                      style: GoogleFonts.poppins(
-                                          color: actionColor,
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w600)))
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ],
+          CarouselSlider.builder(
+            // physics: const NeverScrollableScrollPhysics(),
+            options: CarouselOptions(
+              height: height * 0.6,
+              viewportFraction: 0.75,
+              enableInfiniteScroll: false,
+              enlargeCenterPage: true,
+              initialPage: 1,
+              onPageChanged: (index, reason) {
+                print(index);
+              },
             ),
+            itemCount: mockCoulinerData.length,
+            itemBuilder: (context, index, realIndex) {
+              return CoulinerCard(
+                  name: mockCoulinerData[index].name,
+                  description: mockCoulinerData[index].cardDescription,
+                  image: mockCoulinerData[index].imageCard
+              );
+            },
           )
         ],
       ),
@@ -221,3 +173,98 @@ class RecognizeComponentTwo extends ResponsiveScreenState {
     );
   }
 }
+
+class CoulinerCard extends StatelessWidget {
+  const CoulinerCard({
+    required this.name,
+    required this.description,
+    required this.image,
+    super.key
+  });
+
+  final String name;
+  final String description;
+  final String image;
+
+  @override
+  Widget build(BuildContext context) {
+    double width =  MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+    return Container(
+      height: height * 0.4,
+      width: width * 0.85,
+      margin: EdgeInsets.symmetric(vertical: 15),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(40),
+          // boxShadow: const [
+          //   BoxShadow(
+          //       color: Colors.black,
+          //       blurRadius: 11,
+          //       offset: Offset(0, 4)
+          //   )
+          // ],
+          image: DecorationImage(
+              image:
+              AssetImage(image),
+              fit: BoxFit.fill)),
+      child: Container(
+        height: height * 0.4,
+        width: width * 0.85,
+
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(40),
+            gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Colors.black.withOpacity(0),
+                  Colors.black.withOpacity(0.55)
+                ])),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(43, 0, 43, 43),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                name,
+                style: tsHeading2SemiBoldWhite,
+              ),
+              SizedBox(
+                height: 18,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  SizedBox(
+                    width: 571,
+                    child: Text(
+                      description,
+                      style: tsHeading3MediumWhite,
+                    ),
+                  ),
+                  ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.transparent,
+                          side: BorderSide(color: actionColor),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(34),
+                          ),
+                          fixedSize: Size(146, 49)),
+                      child: Text("Lihat",
+                          style: GoogleFonts.poppins(
+                              color: actionColor,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600)))
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
