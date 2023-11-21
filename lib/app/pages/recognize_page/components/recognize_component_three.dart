@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
+import 'package:web_pancasila_aceh/common/mock_data/mock_tour_data.dart';
+import 'package:web_pancasila_aceh/common/routes/app_pages.dart';
+
+import '../../../../common/model/tour.dart';
 
 class RecognizeComponentThree extends ResponsiveScreenState {
   RecognizeComponentThree({
@@ -45,7 +50,14 @@ class RecognizeComponentThree extends ResponsiveScreenState {
             ),
             itemCount: 4,
             itemBuilder: (context, index) {
-              return TourCard();
+              Tour tour = mockTourData[index];
+              return TourCard(
+                  onTap: () {
+                    Get.toNamed(Routes.DETAIL_WISATA_PAGE, arguments: tour);
+                  },
+                  name: tour.name,
+                  description: tour.cardDescription,
+                  imagePath: tour.cardImage);
             },
           ),
 
@@ -75,14 +87,14 @@ class RecognizeComponentThree extends ResponsiveScreenState {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Masjid Baiturrahman",
+                        mockTourData[4].name,
                         style: GoogleFonts.poppins(
                             color: primaryTextColor,
                             fontWeight: FontWeight.bold,
                             fontSize: 28),
                       ),
                       Text(
-                        "Masjid Baiturrahman adalah salah satu masjid paling bersejarah di Aceh, Indonesia, yang menjadi simbol penting dalam sejarah Aceh dan merupakan salah satu peninggalan arsitektur Islam terkemuka di daerah tersebut.",
+                        mockTourData[4].cardDescription,
                         style: GoogleFonts.poppins(
                             color: primaryTextColor,
                             fontWeight: FontWeight.w500,
@@ -115,7 +127,7 @@ class RecognizeComponentThree extends ResponsiveScreenState {
                         borderRadius: BorderRadius.circular(15),
                         image: DecorationImage(
                             image:
-                                AssetImage("assets/images/wisata_aceh_1.jpeg"),
+                                NetworkImage(mockTourData[4].cardImage),
                             fit: BoxFit.fill)),
                   ),
                 ),
@@ -220,7 +232,17 @@ class RecognizeComponentThree extends ResponsiveScreenState {
 
 
 class TourCard extends StatelessWidget {
-  const TourCard({super.key});
+  const TourCard({
+    required this.onTap,
+    required this.name,
+    required this.description,
+    required this.imagePath,
+    super.key});
+
+  final VoidCallback onTap;
+  final String name;
+  final String description;
+  final String imagePath;
 
   @override
   Widget build(BuildContext context) {
@@ -251,14 +273,14 @@ class TourCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Pantai Pasir Putih",
+                    name,
                     style: GoogleFonts.poppins(
                         color: primaryTextColor,
                         fontWeight: FontWeight.bold,
                         fontSize: 28),
                   ),
                   Text(
-                    "Pantai yang memiliki pasir berwarna putih yang halus dan merupakan daya tarik utama bagi para pengunjung untuk berlibur dan bersantai di tepi laut.",
+                    description,
                     style: GoogleFonts.poppins(
                         color: primaryTextColor,
                         fontWeight: FontWeight.w500,
@@ -266,7 +288,7 @@ class TourCard extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   ElevatedButton(
-                      onPressed: () {},
+                      onPressed: onTap,
                       style: ElevatedButton.styleFrom(
                           backgroundColor: actionColor,
                           shape: RoundedRectangleBorder(
@@ -287,7 +309,7 @@ class TourCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
                       image:
-                      AssetImage("assets/images/wisata_aceh_1.jpeg"),
+                      NetworkImage(imagePath),
                       fit: BoxFit.fill)),
             ),
           ),
