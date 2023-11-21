@@ -17,11 +17,11 @@ class RecognizePageView extends StatelessWidget {
                   headingText: "Kenali Provinsi Aceh",
                   subHeadingText: "Jelajahi Aceh Lebih Dalam"), // Mobile Desktop Done
 
-              // RecognizeComponentOne(), // Mobile Desktop Done
-              //
-              // RecognizeComponentTwo(), // Mobile Desktop Done
-              //
-              // RecognizeComponentThree(), //Component Three not complete at all
+              RecognizeComponentOne(), // Mobile Desktop Done
+
+              RecognizeComponentTwo(), // Mobile Desktop Done
+
+              RecognizeComponentThree(), //Component Three not complete at all
 
               RecognizeComponentFour(), //Mobile Desktop Done
 

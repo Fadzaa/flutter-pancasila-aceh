@@ -1,9 +1,13 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/helper/themes.dart';
 import 'package:web_pancasila_aceh/common/mock_data/mock_couliner_data.dart';
+import 'package:web_pancasila_aceh/common/routes/app_pages.dart';
+
+import '../../../../common/model/couliner.dart';
 
 class RecognizeComponentTwo extends ResponsiveScreenState {
   RecognizeComponentTwo({
@@ -61,10 +65,14 @@ class RecognizeComponentTwo extends ResponsiveScreenState {
             ),
             itemCount: mockCoulinerData.length,
             itemBuilder: (context, index, realIndex) {
+              Couliner couliner = mockCoulinerData[index];
               return CoulinerCard(
-                  name: mockCoulinerData[index].name,
-                  description: mockCoulinerData[index].cardDescription,
-                  image: mockCoulinerData[index].imageCard
+                onTap: () {
+                  Get.toNamed(Routes.DETAIL_KULINER_PAGE, arguments: couliner);
+                },
+                  name: couliner.name,
+                  description: couliner.cardDescription,
+                  image: couliner.imageCard
               );
             },
           )
@@ -176,12 +184,14 @@ class RecognizeComponentTwo extends ResponsiveScreenState {
 
 class CoulinerCard extends StatelessWidget {
   const CoulinerCard({
+    required this.onTap,
     required this.name,
     required this.description,
     required this.image,
     super.key
   });
 
+  final VoidCallback onTap;
   final String name;
   final String description;
   final String image;
@@ -245,7 +255,7 @@ class CoulinerCard extends StatelessWidget {
                     ),
                   ),
                   ElevatedButton(
-                      onPressed: () {},
+                      onPressed: onTap,
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.transparent,
                           side: BorderSide(color: actionColor),

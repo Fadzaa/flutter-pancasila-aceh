@@ -3,6 +3,7 @@ class Tour {
   final String name;
   final String cardImage;
   final String description;
+  final String cardDescription;
   final List<String> highlightText;
   final List<String> detailImages;
 
@@ -11,6 +12,7 @@ class Tour {
     required this.name,
     required this.cardImage,
     required this.description,
+    required this.cardDescription,
     required this.highlightText,
     required this.detailImages,
   });
@@ -21,6 +23,7 @@ class Tour {
       name: json['name'],
       cardImage: json['card_image'],
       description: json['description'],
+      cardDescription: json['card_description'],
       highlightText: List<String>.from(json['highlight_text']),
       detailImages: List<String>.from(json['detail_image']),
     );
