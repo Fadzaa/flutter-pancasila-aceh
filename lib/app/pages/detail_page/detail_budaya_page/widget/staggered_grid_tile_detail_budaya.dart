@@ -27,7 +27,7 @@ class staggeredGridTileDetailBudaya extends ResponsiveScreenState {
       mainAxisCellCount: isSmall ? 2 : 3,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(15),
-        child: Image.asset('assets/images/$pathImage.jpg', fit: BoxFit.cover),
+        child: Image.network(pathImage, fit: BoxFit.cover),
       ),
     );
   }

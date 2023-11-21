@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:get/get.dart';
 import 'package:web_pancasila_aceh/app/pages/detail_page/detail_budaya_page/widget/staggered_grid_tile_detail_budaya.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
+
+import '../../../../../common/model/culture.dart';
 
 
 class DetailBudayaComponentSteggred extends ResponsiveScreenState {
@@ -13,6 +16,8 @@ class DetailBudayaComponentSteggred extends ResponsiveScreenState {
 
   @override
   Widget buildDesktopPage(context) {
+
+    Culture culture = Get.arguments;
     
     final double width = MediaQuery.of(context).size.width;
     final double height = MediaQuery.of(context).size.height;
@@ -25,9 +30,9 @@ class DetailBudayaComponentSteggred extends ResponsiveScreenState {
         crossAxisSpacing: width * 0.02,
         mainAxisSpacing: width * 0.02,
         children: [
-          staggeredGridTileDetailBudaya(pathImage: 'budaya_aceh_1', isSmall: false),
-          staggeredGridTileDetailBudaya(pathImage: 'budaya_aceh_1', isSmall: true),
-          staggeredGridTileDetailBudaya(pathImage: 'budaya_aceh_1', isSmall: true),
+          staggeredGridTileDetailBudaya(pathImage: culture.imageCard, isSmall: false),
+          staggeredGridTileDetailBudaya(pathImage: culture.imageDetail[0], isSmall: true),
+          staggeredGridTileDetailBudaya(pathImage: culture.imageDetail[1], isSmall: true),
         ],
       ),
     );
