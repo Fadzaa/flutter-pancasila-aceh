@@ -39,6 +39,8 @@ class RecognizeComponentThree extends ResponsiveScreenState {
             style: tsHeading1BoldBlack,
           ),
 
+          SizedBox(height: 100,),
+
           //Grid Card
           GridView.builder(
             shrinkWrap: true,
