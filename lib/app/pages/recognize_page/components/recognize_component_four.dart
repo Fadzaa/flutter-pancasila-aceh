@@ -1,9 +1,12 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:web_pancasila_aceh/common/base/abstract_responsive_state.dart';
 import 'package:web_pancasila_aceh/common/mock_data/mock_culture_data.dart';
 
 import '../../../../common/helper/themes.dart';
+import '../../../../common/model/culture.dart';
+import '../../../../common/routes/app_pages.dart';
 
 class RecognizeComponentFour extends ResponsiveScreenState {
   RecognizeComponentFour({
@@ -25,6 +28,7 @@ class RecognizeComponentFour extends ResponsiveScreenState {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+
           Padding(
             padding: const EdgeInsets.only(left: 108, top: 80, bottom: 30),
             child: Column(
@@ -56,7 +60,15 @@ class RecognizeComponentFour extends ResponsiveScreenState {
             ),
             itemCount: mockCultureData.length,
             itemBuilder: (context, index, realIndex) {
-              return CultureCard();
+              Culture culture = mockCultureData[index];
+              return CultureCard(
+                onTap: () {
+                  Get.toNamed(Routes.DETAIL_BUDAYA_PAGE, arguments: culture);
+                },
+                  name: culture.name,
+                  description: culture.cardDescription,
+                  image: culture.imageCard
+              );
             },
           ),
 
@@ -160,7 +172,18 @@ class RecognizeComponentFour extends ResponsiveScreenState {
 
 
 class CultureCard extends StatelessWidget {
-  const CultureCard({super.key});
+  const CultureCard({
+    required this.onTap,
+    required this.name,
+    required this.description,
+    required this.image,
+    super.key
+  });
+
+  final VoidCallback onTap;
+  final String name;
+  final String description;
+  final String image;
 
   @override
   Widget build(BuildContext context) {
@@ -182,13 +205,13 @@ class CultureCard extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black.withOpacity(0.1),
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                       blurRadius: 6,
                     ),
                   ],
-                  image: const DecorationImage(
+                  image: DecorationImage(
                       image:
-                      AssetImage("assets/images/budaya_aceh_1.jpg"),
+                      NetworkImage(image),
                       fit: BoxFit.cover)),
             ),
             Container(
@@ -200,12 +223,12 @@ class CultureCard extends StatelessWidget {
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black.withOpacity(0.1),
-                    offset: Offset(0, 3),
+                    offset: const Offset(0, 3),
                     blurRadius: 6,
                   ),
                 ],
                 color: Colors.white,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)),
               ),
@@ -215,13 +238,13 @@ class CultureCard extends StatelessWidget {
                 children: [
                   const Spacer(),
                   Text(
-                    "Tari Saman adalah tarian tradisional Aceh yang melibatkan gerakan tangan yang cepat dan ritmik serta vokal yang khas, sering kali diiringi oleh musik gendang.",
+                    description,
                     style: tsHeading4MediumBlack,
                     textAlign: TextAlign.center,
                   ),
                   const Spacer(),
                   ElevatedButton(
-                      onPressed: () {},
+                      onPressed: onTap,
                       style: ElevatedButton.styleFrom(
                           fixedSize: Size(146, 51),
                           backgroundColor: actionColor,
@@ -246,7 +269,7 @@ class CultureCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(24)),
           child: Center(
             child: Text(
-              "Tari Saman",
+              name,
               style: tsHeading3BoldWhite,
             ),
           ),
