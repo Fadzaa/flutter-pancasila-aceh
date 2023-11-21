@@ -14,6 +14,10 @@ TextStyle tsNavbarText = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor, fontWeight: FontWeight.w600, fontSize: 14));
 
+TextStyle tsNavbarTextMobile = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: whiteTextColor, fontWeight: FontWeight.w600, fontSize: 14));
+
 TextStyle tsDisplayBoldWhite = GoogleFonts.poppins(
     textStyle: const TextStyle(
         color: whiteTextColor, fontWeight: FontWeight.w700, fontSize: 56));
