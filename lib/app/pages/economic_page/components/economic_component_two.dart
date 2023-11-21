@@ -41,7 +41,7 @@ class EconomicComponentTwo extends ResponsiveScreenState {
         CarouselSlider.builder(
           // physics: const NeverScrollableScrollPhysics(),
           options: CarouselOptions(
-            height: height * 0.8,
+            height: height * 0.85,
             viewportFraction: 0.4,
             enableInfiniteScroll: false,
             enlargeCenterPage: true,
