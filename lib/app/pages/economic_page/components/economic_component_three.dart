@@ -39,15 +39,15 @@ class EconomicComponentThree extends ResponsiveScreenState {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 EconomicCardVertical(
-                  professionImage: "assets/images/perekonomian_pariwisata.png", 
-                  professionName: "Infrastruktur", 
-                  professionDescription: "Keterbatasan infrastruktur dan konektivitas dapat menghambat pertumbuhan ekonomi dan akses ke pasar."
+                  professionImage: "assets/images/perekonomian_perubahaniklim.png", 
+                  professionName: "Perubahan Iklim", 
+                  professionDescription: "Keterbatasan infrastruktur dan konektivitas dapat menghambat pertumbuhan ekonomi dan akses ke pasarAceh mengalami dampak perubahan iklim, seperti banjir, tanah longsor, dan kenaikan permukaan laut, yang dapat merusak infrastruktur dan pertanian."
                 ),
                 SizedBox(width: 50),
                 EconomicCardVertical(
-                  professionImage: "assets/images/perekonomian_pariwisata.png", 
-                  professionName: "Infrastruktur", 
-                  professionDescription: "Keterbatasan infrastruktur dan konektivitas dapat menghambat pertumbuhan ekonomi dan akses ke pasar."
+                  professionImage: "assets/images/perekonomian_ketidakberlanjutan.png", 
+                  professionName: "Ketidakberlanjutan", 
+                  professionDescription: "Beberapa sektor, seperti pertanian kelapa sawit, dapat menyebabkan ketidakberlanjutan lingkungan, termasuk deforestasi dan degradasi tanah."
                 )
               ],
             ),
@@ -55,7 +55,7 @@ class EconomicComponentThree extends ResponsiveScreenState {
 
           SizedBox(height: 30),
           EconomicCardHorizontal(
-            professionImage: "assets/images/perekonomian_pariwisata.png", 
+            professionImage: "assets/images/perekonomian_infrasturktur.png", 
             professionName: "Infrastruktur", 
             professionDescription: "Keterbatasan infrastruktur dan konektivitas dapat menghambat pertumbuhan ekonomi dan akses ke pasar."
           ),
@@ -93,24 +93,24 @@ class EconomicComponentThree extends ResponsiveScreenState {
             width: width * 0.9,
             height: height * 0.35,
             professionName: "Perubahan Iklim",
-            professionDescription: "Aceh mengalami dampak perubahan iklim, seperti banjir, tanah longsor, dan kenaikan permukaan laut, yang dapat merusak infrastruktur dan pertanian.",
-            professionImage: "assets/images/perekonomian_pariwisata.png"
+            professionDescription: "Keterbatasan infrastruktur dan konektivitas dapat menghambat pertumbuhan ekonomi dan akses ke pasarAceh mengalami dampak perubahan iklim, seperti banjir, tanah longsor, dan kenaikan permukaan laut, yang dapat merusak infrastruktur dan pertanian.",
+            professionImage: "assets/images/perekonomian_perubahaniklim.png"
           ),
           SizedBox(height: height * 0.05),
           economicCardMobile(
             width: width * 0.9,
             height: height * 0.35,
-            professionName: "Perubahan Iklim",
-            professionDescription: "Aceh mengalami dampak perubahan iklim, seperti banjir, tanah longsor, dan kenaikan permukaan laut, yang dapat merusak infrastruktur dan pertanian.",
-            professionImage: "assets/images/perekonomian_pariwisata.png"
+            professionName: "Ketidakberlanjutan",
+            professionDescription: "Beberapa sektor, seperti pertanian kelapa sawit, dapat menyebabkan ketidakberlanjutan lingkungan, termasuk deforestasi dan degradasi tanah.",
+            professionImage: "assets/images/perekonomian_ketidakberlanjutan.png"
           ),
           SizedBox(height: height * 0.05),
           economicCardMobile(
             width: width * 0.9,
             height: height * 0.35,
-            professionName: "Perubahan Iklim",
-            professionDescription: "Aceh mengalami dampak perubahan iklim, seperti banjir, tanah longsor, dan kenaikan permukaan laut, yang dapat merusak infrastruktur dan pertanian.",
-            professionImage: "assets/images/perekonomian_pariwisata.png"
+            professionName: "Infrastruktur",
+            professionDescription: "Keterbatasan infrastruktur dan konektivitas dapat menghambat pertumbuhan ekonomi dan akses ke pasar.",
+            professionImage: "assets/images/perekonomian_infrasturktur.png"
           )
         ]
       ),

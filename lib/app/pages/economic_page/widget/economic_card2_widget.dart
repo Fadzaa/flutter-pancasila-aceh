@@ -23,7 +23,7 @@ class EconomicCardVertical extends StatelessWidget {
 
     return Container(
       width: width * 0.33,
-      height: height * 0.88,
+      height: height * 0.95,
       decoration: BoxDecoration(
         color: Color.fromARGB(255, 255, 255, 255),
         borderRadius: BorderRadius.all(
