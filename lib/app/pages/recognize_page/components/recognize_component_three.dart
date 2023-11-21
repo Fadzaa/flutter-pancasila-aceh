@@ -39,6 +39,8 @@ class RecognizeComponentThree extends ResponsiveScreenState {
             style: tsHeading1BoldBlack,
           ),
 
+          SizedBox(height: 100,),
+
           //Grid Card
           GridView.builder(
             shrinkWrap: true,
@@ -63,14 +65,14 @@ class RecognizeComponentThree extends ResponsiveScreenState {
 
           // //Big Container Card
           Container(
-            width: 877,
+            width: width * 0.8,
             child: Stack(
               children: [
                 //Grid Card
                 Container(
-                  width: 877,
-                  height: 531,
-                  margin: EdgeInsets.only(top: 130),
+                  width: width * 0.8,
+                  height: height * 0.6,
+                  margin: EdgeInsets.only(top: height * 0.35),
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(35),
@@ -110,8 +112,15 @@ class RecognizeComponentThree extends ResponsiveScreenState {
                                   backgroundColor: actionColor,
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(34)),
-                                  fixedSize: Size(146, 49)),
-                              child: Text("Lihat")),
+                                  fixedSize: Size(width * 0.1, height * 0.05),),
+                              child: Text(
+                                  "Lihat"
+                                  , style: GoogleFonts.poppins(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                fontSize: 24
+                              )
+                              )),
                         ],
                       )
                     ],
@@ -121,8 +130,9 @@ class RecognizeComponentThree extends ResponsiveScreenState {
                 Align(
                   alignment: Alignment.topCenter,
                   child: Container(
-                    width: 702,
-                    height: 246,
+                    width: width * 0.65,
+                    height: height * 0.4,
+                    margin: EdgeInsets.only(top: 50),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         image: DecorationImage(
@@ -246,17 +256,20 @@ class TourCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+
     return Container(
-      width: 508,
+      width: width * 0.35,
       child: Stack(
         children: [
           //Grid Card
           Align(
             alignment: Alignment.topCenter,
             child: Container(
-              width: 508,
-              height: 516,
-              margin: EdgeInsets.only(top: 130),
+              width: width * 0.35,
+              height: height * 0.5,
+              margin: EdgeInsets.only(top: height * 0.2),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(35),
@@ -293,8 +306,12 @@ class TourCard extends StatelessWidget {
                           backgroundColor: actionColor,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(34)),
-                          fixedSize: Size(146, 49)),
-                      child: Text("Lihat"))
+                          fixedSize: Size(width * 1, 50)),
+                      child: Text("Lihat", style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 24
+                      )), )
                 ],
               ),
             ),
@@ -303,8 +320,8 @@ class TourCard extends StatelessWidget {
           Align(
             alignment: Alignment.topCenter,
             child: Container(
-              width: 413,
-              height: 246,
+              width: width * 0.25,
+              height: height * 0.275,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(

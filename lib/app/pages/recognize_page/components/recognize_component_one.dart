@@ -16,7 +16,14 @@ class RecognizeComponentOne extends ResponsiveScreenState {
       width: width,
       height: height,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(24),
+          boxShadow:  [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.7),
+              offset: Offset(0, 4),
+              blurRadius: 6
+            )
+          ],
           image:
               DecorationImage(image: AssetImage(imagePath), fit: BoxFit.fill)),
     );
@@ -29,6 +36,9 @@ class RecognizeComponentOne extends ResponsiveScreenState {
 
   @override
   Widget buildDesktopPage(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+
     // TODO: implement buildDesktopPage
     return Padding(
       padding: EdgeInsets.fromLTRB(108, 117, 118, 0),
@@ -63,16 +73,16 @@ class RecognizeComponentOne extends ResponsiveScreenState {
                     Padding(
                       padding: const EdgeInsets.only(bottom: 30.0),
                       child: imageCard(
-                          width: 340,
-                          height: 152,
+                          width: width * 0.35,
+                          height: height * 0.25,
                           imagePath: "assets/images/icon_aceh_1.JPG"),
                     ),
                     SizedBox(
                       width: 24,
                     ),
                     imageCard(
-                        width: 204,
-                        height: 183,
+                        width: width * 0.15,
+                        height: height * 0.24,
                         imagePath: "assets/images/icon_aceh_2.jpg"),
                     SizedBox(
                       width: 41,
@@ -85,16 +95,16 @@ class RecognizeComponentOne extends ResponsiveScreenState {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 imageCard(
-                    width: 470,
-                    height: 235,
+                    width: width * 0.35,
+                    height: height * 0.35,
                     imagePath: "assets/images/icon_aceh_3.jpg"),
                 imageCard(
-                    width: 280,
-                    height: 317,
+                    width: width * 0.275,
+                    height: height * 0.4,
                     imagePath: "assets/images/icon_aceh_4.jpg"),
                 imageCard(
-                    width: 281,
-                    height: 190,
+                    width: width * 0.2,
+                    height: height * 0.3,
                     imagePath: "assets/images/icon_aceh_5.jpeg")
               ],
             )
