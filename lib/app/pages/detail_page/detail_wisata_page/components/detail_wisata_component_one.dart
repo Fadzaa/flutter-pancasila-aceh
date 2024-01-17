@@ -40,6 +40,7 @@ class DetailWisataComponentOne extends ResponsiveScreenState {
     final Size mediaQuery = MediaQuery.of(context).size;
     final double width = mediaQuery.width;
     final double height = mediaQuery.height;
+    Tour tour = Get.arguments;
 
     return Container(
       child: StaggeredGrid.count(
@@ -47,10 +48,10 @@ class DetailWisataComponentOne extends ResponsiveScreenState {
         crossAxisSpacing: width * 0.02,
         mainAxisSpacing: width * 0.02,
         children: [
-          staggeredGridTileDetailWisata(pathImage: 'wisata_pantai_pasir_putih_one', isSmall: false),
-          staggeredGridTileDetailWisata(pathImage: 'wisata_pantai_pasir_putih_two', isSmall: true),
-          staggeredGridTileDetailWisata(pathImage: 'wisata_pantai_pasir_putih_three', isSmall: false),
-          staggeredGridTileDetailWisata(pathImage: 'wisata_pantai_pasir_putih_four', isSmall: true),
+          staggeredGridTileDetailWisata(pathImage: tour.detailImages[0], isSmall: false),
+          staggeredGridTileDetailWisata(pathImage: tour.detailImages[1], isSmall: true),
+          staggeredGridTileDetailWisata(pathImage: tour.detailImages[2], isSmall: false),
+          staggeredGridTileDetailWisata(pathImage: tour.detailImages[3], isSmall: true),
         ],
       ),
     );

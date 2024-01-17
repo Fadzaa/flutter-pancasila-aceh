@@ -207,7 +207,9 @@ class RecognizeComponentThree extends ResponsiveScreenState {
                         textAlign: TextAlign.center,
                       ),
                       ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Get.toNamed(Routes.DETAIL_WISATA_PAGE, arguments: mockTourData[0]);
+                          },
                           style: ElevatedButton.styleFrom(
                               backgroundColor: actionColor,
                               shape: RoundedRectangleBorder(
