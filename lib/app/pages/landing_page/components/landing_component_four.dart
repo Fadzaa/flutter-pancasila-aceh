@@ -56,7 +56,7 @@ class LandingComponentFour extends ResponsiveScreenState {
                             ),
                             SizedBox(height: 49),
                             Text(
-                              'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+                              'Mayor Jenderal TNI (Purn.) Achmad Marzuki (lahir 24 Februari 1967) adalah seorang tokoh militer dan birokrat Indonesia. Alumni Akademi Militer tahun 1989 ini sejak 6 Juli 2022 mengemban amanat sebagai Penjabat Gubernur Aceh.[2] Ia pensiun dini dari dinas militer pada tahun 2022 karena diangkat sebagai Staf Ahli Menteri Dalam Negeri Bidang Hukum dan Kesatuan Bangsa.[3]',
                               style: tsHeading4MediumBlack,
                               textAlign: TextAlign.left,
                             ),

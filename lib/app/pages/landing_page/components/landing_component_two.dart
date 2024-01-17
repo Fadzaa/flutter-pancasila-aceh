@@ -86,72 +86,68 @@ class LandingComponentTwo extends ResponsiveScreenState {
                 itemCount: mockTourData.length,
                 itemBuilder: (context, index) {
                   Tour tour = mockTourData[index];
-                  return MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      onEnter: (_) {
-                        controller.setHoveredIndex(index);
-                      },
-                      onExit: (_) {
-                        controller.setHoveredIndex(-1); // Reset hover index when exiting
-                      },
-                      child: Obx(() => Container
-                        (
-                        width: width * 0.2,
-                        margin: const EdgeInsets.only(right: 25),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: controller.hoveredIndex == index ? primaryColor : Colors.white,
-                        ),
-                        child: Stack(
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(16),
-                                image: DecorationImage(
-                                  image: NetworkImage(tour.cardImage),
-                                  fit: BoxFit.fill,
-                                ),
+                  return Obx(() => InkWell(
+                    onTap: () {
+                      Get.toNamed(Routes.DETAIL_WISATA_PAGE, arguments: tour);
+                    },
+                    child: Container
+                      (
+                      width: width * 0.2,
+                      margin: const EdgeInsets.only(right: 25),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        color: controller.hoveredIndex == index ? primaryColor : Colors.white,
+                      ),
+                      child: Stack(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              image: DecorationImage(
+                                image: NetworkImage(tour.cardImage),
+                                fit: BoxFit.fill,
                               ),
                             ),
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 45),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(16),
-                                gradient: LinearGradient(
-                                  colors: [
-                                    Colors.black.withOpacity(0),
-                                    Colors.black.withOpacity(1),
-                                  ],
-                                  begin: const Alignment(0, 0.4),
-                                  end: Alignment.bottomCenter,
-                                ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 45),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              gradient: LinearGradient(
+                                colors: [
+                                  Colors.black.withOpacity(0),
+                                  Colors.black.withOpacity(1),
+                                ],
+                                begin: const Alignment(0, 0.4),
+                                end: Alignment.bottomCenter,
                               ),
-                              width: double.infinity,
-                              height: double.infinity,
-                              child: Align(
-                                alignment: controller.hoveredIndex == index ? Alignment.bottomCenter : Alignment.bottomLeft,
-                                child: controller.hoveredIndex == index ? Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
-                                    Text(tour.name, style: tsHeading3BoldWhite,),
+                            ),
+                            width: double.infinity,
+                            height: double.infinity,
+                            child: Align(
+                              alignment: controller.hoveredIndex == index ? Alignment.bottomCenter : Alignment.bottomLeft,
+                              child: controller.hoveredIndex == index ? Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Text(tour.name, style: tsHeading3BoldWhite,),
 
-                                    ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: actionColor,
-                                          fixedSize: Size(150, 40),
-                                        ),
-                                        onPressed: () {
-                                          Get.toNamed(Routes.DETAIL_WISATA_PAGE, arguments: tour);
-                                        }, child: Text("Jelajahi", style: tsHeading3BoldWhite,)),
-                                  ],
-                                ) :Text(tour.name, style: tsHeading3BoldWhite,),
-                              ),
+                                  ElevatedButton(
+                                      style: ElevatedButton.styleFrom(
+                                        backgroundColor: actionColor,
+                                        fixedSize: Size(150, 40),
+                                      ),
+                                      onPressed: () {
+                                        Get.toNamed(Routes.DETAIL_WISATA_PAGE, arguments: tour);
+                                      }, child: Text("Jelajahi", style: tsHeading3BoldWhite,)),
+                                ],
+                              ) :Text(tour.name, style: tsHeading3BoldWhite,),
                             ),
-                          ],
-                        ),
-                      ),)
-                  );
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),);
 
                 }
             ),
