@@ -43,7 +43,7 @@ class staggeredGridTileDetailWisata extends ResponsiveScreenState {
       mainAxisCellCount: isSmall ? 1 : 2,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
-        child: Image.asset('assets/images/$pathImage.png', fit: isSmall ? BoxFit.fitWidth : BoxFit.fitHeight),
+        child: Image.network(pathImage, fit: isSmall ? BoxFit.fitWidth : BoxFit.fitHeight),
       ),
     );
   }
